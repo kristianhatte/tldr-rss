@@ -8,7 +8,7 @@ on:
     - cron:  '0 12 * * *'
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -55,3 +55,28 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+  push-to-output:
+    runs-on: ubuntu-latest
+    name: Push to output branch
+    needs: [build-feed]
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download generated files
+        uses: actions/download-artifact@v4
+        with:
+          name: rss
+          path: ./dist
+      - name: Push to output branch
+        run: |
+          cd dist
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b output
+          git add -A
+          git commit -m "Update generated feeds $(date -u +%Y-%m-%d)"
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git push -f origin output

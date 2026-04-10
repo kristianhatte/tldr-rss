@@ -15,11 +15,8 @@ const MAX_DAYS = parseInt(process.env.MAX_DAYS || "10", 10);
 const feeds: string[] = [
   "tech",
   "ai",
-  "crypto",
-  "founders",
   "design",
   "devops",
-  "data",
   "infosec",
   "webdev",
 ];
@@ -65,12 +62,7 @@ const fetchFeeds = async (): Promise<NewsWithDate[]> => {
     }
 
     await writeRssFeed(feedName, feedNews);
-
-    // Generate HTML page for selected feeds
-    const feedsWithHtml = ["tech", "ai", "design", "devops", "infosec", "webdev"];
-    if (feedsWithHtml.includes(feedName)) {
-      await writeHtmlFeed(feedName, feedNews);
-    }
+    await writeHtmlFeed(feedName, feedNews);
 
     dateWithNews.push(...feedNews);
   }
