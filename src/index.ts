@@ -20,6 +20,8 @@ const feeds: string[] = [
   "design",
   "devops",
   "data",
+  "infosec",
+  "webdev",
 ];
 
 type NewsWithDate = News & { date: string };
@@ -64,8 +66,9 @@ const fetchFeeds = async (): Promise<NewsWithDate[]> => {
 
     await writeRssFeed(feedName, feedNews);
 
-    // Generate HTML page for tech, ai, and design feeds
-    if (feedName === "tech" || feedName === "ai" || feedName === "design") {
+    // Generate HTML page for selected feeds
+    const feedsWithHtml = ["tech", "ai", "design", "devops", "infosec", "webdev"];
+    if (feedsWithHtml.includes(feedName)) {
       await writeHtmlFeed(feedName, feedNews);
     }
 
