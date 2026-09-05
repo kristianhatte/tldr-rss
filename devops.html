@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TLDR DEVOPS news articles for AI consumption">
+    <title>TLDR DEVOPS News Feed</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1em;
+        }
+        article:last-child {
+            border-bottom: none;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        time {
+            color: #666;
+            font-size: 0.9em;
+        }
+        p {
+            color: #444;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TLDR DEVOPS News Feed</h1>
+        <p>Latest 50 articles from <a href="https://tldr.tech/">TLDR</a></p>
+    </header>
+    <main>
+        <article>
+            <h2><a href="https://buildkite.com/home/?utm_source=TLDR&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=2026-09-04_Primary_Buildkite&amp;amp;utm_content=header_what_cursor_openai">What do Cursor, OpenAI, Anthropic, Notion, Airbnb, Nvidia, Uber, Meta, Pierre and Bun have in common? (Sponsor)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>Buildkite, the pro-tool that hands you building blocks for CI orchestration and then gets out of the way.Enough with constant downtime. No more band-aids or burden.We provide programmable primitives you co-ordinate, running only what changes, across any cloud, any chip, your secrets, your infra.Control without compromise. Build faster, more securely, more reliably, with the CI engineered for frontier scale, used by the teams setting the pace. You deserve better CI. Start with our 30-day trial. Kick the tires →</p>
+        </article>
+        <article>
+            <h2><a href="https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/?utm_source=tldrdevops">Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler (4 minute read)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>Kubernetes v1.37 makes horizontal pod autoscaling to zero replicas a Beta feature, enabled by default. A HorizontalPodAutoscaler can now scale a workload all the way down to zero pods and bring it back up based on object or external metrics, without requiring an add-on or Alpha feature gate as previous versions did. The feature works for queue consumers and batch processors but requires at least one object or external metric, since CPU and memory metrics disappear once no pods are running. The first Alpha version shipped in Kubernetes v1.16, and SIG Autoscaling plans to collect operational feedback before considering a GA graduation.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.virtualizor.com/blog/security-incident-bgp-hijacking/?utm_source=tldrdevops">Security Incident - BGP Hijacking (12 minute read)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>An unauthorized BGP announcement diverted traffic for a Softaculous-owned /24 for roughly 33 hours, allowing the attacker to intercept requests and obtain valid Let&#039;s Encrypt certificates because ACME validation traffic was hijacked too. A small number of Virtualizor systems later downloaded a malicious update package, showing how routing attacks can cascade into software supply-chain compromise.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.cncf.io/blog/2026/09/03/migrating-a-critical-kubernetes-deployment-from-the-default-namespace-without-any-downtime/?utm_source=tldrdevops">Migrating a critical Kubernetes deployment from the default namespace without any downtime (6 minute read)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>A Kubernetes engineer describes how to move a service out of the default namespace without downtime, using an ExternalName service as a DNS-level forwarding address. The approach lets dozens of dependent services keep calling the old cluster-internal DNS name while traffic silently routes to the new deployment, with no code changes required from other teams. A temporary policy exception handled the ingress side, allowing both the old and new ingress rules to coexist briefly while traffic was confirmed on the new deployment before the old one was removed.</p>
+        </article>
+        <article>
+            <h2><a href="https://azure.microsoft.com/en-us/blog/managed-postgresql-vs-self-hosted-postgresql-key-benefits-and-trade-offs/?utm_source=tldrdevops">Managed PostgreSQL vs. self-hosted PostgreSQL: Key benefits and trade-offs (6 minute read)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>Managed PostgreSQL services reduce the operational tax of self-hosting by transferring infrastructure, patching, backups, high availability, and platform security responsibilities to the provider. Self-managed PostgreSQL remains preferable when organizations need deep control, specialized configurations, unsupported extensions, or have mature platform engineering and operational capabilities.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.cncf.io/blog/2026/09/02/metal3-meets-kubevirtbmc-provisioning-kubevirt-vms-like-bare-metal/?utm_source=tldrdevops">Metal3 meets KubeVirtBMC: Provisioning KubeVirt VMs like bare metal (6 minute read)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>KubeVirtBMC can be paired with Metal3, a CNCF incubating project, to provision KubeVirt virtual machines as if they were physical bare-metal servers. Metal3 uses OpenStack Ironic under the hood to handle hardware inspection, boot device control, and OS image writing via standard IPMI or Redfish interfaces. KubeVirtBMC creates virtual BMC endpoints for KubeVirt VMs, so Metal3 has no way to distinguish them from real hardware. This post walks through a full end-to-end setup that configures Redfish virtual media boot without PXE or DHCP and provisions a VM with a live ISO image.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/semantica-agi/semantica?utm_source=tldrdevops">Semantica (GitHub Repo)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>Semantica is an open-source context and knowledge-graph layer for AI systems that turns enterprise data, agent decisions, and provenance into a structured, queryable graph. It supports deterministic reasoning with Datalog, SPARQL, Rete, and forward chaining, plus W3C PROV-O audit trails, SHACL/OWL ontology governance, conflict detection, and integrations with graph stores, vector databases, Databricks, Snowflake, LangChain, CrewAI, MCP, and other agent frameworks.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/magnitudedev/magnitude?utm_source=tldrdevops">Magnitude (GitHub Repo)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>Magnitude is an open source inference server that runs AI models locally on your own hardware, with no internet connection required after setup. It profiles your machine, recommends models that fit your available memory, then downloads and runs them. The tool works with Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline, and also supports custom GGUF models from Hugging Face.</p>
+        </article>
+        <article>
+            <h2><a href="https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-four-ways-to-lower-the-cost/?utm_source=tldrdevops">The Economics of Agent Optimization: Four ways to lower the cost (8 minute read)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>Agent optimization reduces AI costs by optimizing model selection, deployment, caching, prompts, agent configurations, and observability at runtime. Microsoft Foundry combines these capabilities into a continuous optimization loop that measures cost per successful outcome while maintaining quality, latency, and reliability.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.cloudflare.com/cache-transcoding/?utm_source=tldrdevops">How we could save petabytes of cache storage with Zstandard and Pingora (7 minute read)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>Cloudflare has prototyped a system called Cache Transcoding that compresses eligible cached assets using the Zstandard algorithm before writing them to disk, shrinking those assets to roughly one-third of their original size on average. The system targets compressible text content like HTML, JSON, CSS, and JavaScript, which made up 67.3% of requests in Cloudflare&#039;s traffic sample but arrived uncompressed about 71% of the time. Encoding happens once when an asset enters the cache, while the CPU cost of decoding is paid on every serve at approximately 1.56 nanoseconds per byte. In testing across 10 cache servers with more than a million requests, the architecture stayed within its CPU budget at zstd level 3 with a 4 kibibyte minimum object size.</p>
+        </article>
+        <article>
+            <h2><a href="https://victoriametrics.com/blog/go-swiss-table-map/?utm_source=tldrdevops">How Swiss Tables Work in Go&#039;s Built-in Map (28 minute read)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>Go&#039;s newer map implementation uses a Swiss Table design that groups entries in small blocks with compact control bytes, allowing many candidate slots to be checked before doing full key comparisons. SIMD can compare multiple control bytes at once on supported CPUs, while the layout and growth strategy improve cache locality and lookup performance.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.hashicorp.com/en/blog/hcp-vault-dedicated-audit-logs-microsoft-sentinel?utm_source=tldrdevops">Stream HCP Vault Dedicated audit logs to Microsoft Sentinel (7 minute read)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>HCP Vault Dedicated audit logs can reach Microsoft Sentinel through a Terraform-provisioned Azure pipeline using a generic HTTP sink, Azure Functions or Logic Apps, and Azure Monitor Logs Ingestion.</p>
+        </article>
+        <article>
+            <h2><a href="https://cloudnativenow.com/contributed-content/from-controls-to-continuous-assurance-rethinking-grc-for-cloud-native-environments/?utm_source=tldrdevops">From Controls to Continuous Assurance: Rethinking GRC for Cloud-Native Environments (4 minute read)</a></h2>
+            <time datetime="2026-09-04T00:00:00.000Z">2026-09-04T00:00:00.000Z</time>
+            <p>Cloud-native environments make periodic GRC checks obsolete because infrastructure and configurations change continuously.</p>
+        </article>
+        <article>
+            <h2><a href="https://events.linuxfoundation.org/opensearchcon-north-america/?utm_source=tldrdevopspri&amp;amp;utm_medium=banner&amp;amp;utm_campaign=50584845-Q3+OpenSearchCon+NA+2026&amp;amp;utm_content=090226_Body_ticket">The future of open source search and observability starts at OpenSearchCon (Sponsor)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>Technical leaders from Intel, IBM, Uber and more will gather in San Jose this September to talk search, observability, and AI workloads, and to connect with peers solving the same problems.Get your ticket for keynotes, hands-on sessions, and more:Leave with real production patterns for your team, not just slidesBuild a full OpenTelemetry observability stack or an agentic AI search app in two hands-on Developer WorkshopsNetwork with peers tackling the same search and observability challengesSee the full schedule and grab a seat</p>
+        </article>
+        <article>
+            <h2><a href="https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/?utm_source=tldrdevops">Kubernetes v1.37: Storage Version Migration Enabled by Default (3 minute read)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>Storage version migration (SVM) is now generally available in Kubernetes v1.37, stable and enabled by default across all clusters running that version. The feature lets cluster administrators migrate stored API resources to a current storage version by creating a declarative StorageVersionMigration object, which the built-in control plane controller then handles automatically. Previously, admins had to rely on manual kubectl scripts or a separate out-of-tree component called kube-storage-version-migrator.</p>
+        </article>
+        <article>
+            <h2><a href="https://wasmi-labs.github.io/blog/posts/wasmi-v2.0/?utm_source=tldrdevops">Wasmi 2.0 - Engineering of the Fastest Wasm Interpreters (23 minute read)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>Wasmi 2.0 is roughly 2.2× faster than Wasmi 1.0 across its benchmark suite, largely through a redesigned interpreter that adds threaded-code dispatch, accumulator registers, and lower-overhead instruction handling. The release also preserves fast startup, adds options to reduce binary size, and includes stable fuel metering, deterministic WebAssembly support, and an improved CLI.</p>
+        </article>
+        <article>
+            <h2><a href="https://aws.amazon.com/blogs/devops/build-your-own-continuous-modernization-pipeline-with-aws-transform-custom/?utm_source=tldrdevops">Build your own continuous modernization pipeline with AWS Transform custom (7 minute read)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>AI-driven development accelerates technical debt, making continuous modernization essential in legacy environments. A DIY approach using AWS Transform custom and GitHub Actions automates dependency remediation, documentation, repository-wide transformations, and continual learning, enabling ongoing modernization through CI/CD.</p>
+        </article>
+        <article>
+            <h2><a href="https://aws.amazon.com/blogs/devops/optimize-eks-operations-with-agents-reduce-mttr-with-aws-devops-agent-and-a-kubernetes-operator/?utm_source=tldrdevops">Optimize EKS operations with agents: Reduce MTTR with AWS DevOps Agent and a Kubernetes Operator (10 minute read)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>AWS has published a guide for building an automated incident response pipeline on Amazon EKS using a new open source tool called the DevOps Agent Operator. The Operator watches for pod failures like OOMKilled or IP exhaustion, immediately collects pod logs, node-level data, and Kubernetes events, then sends that data to AWS DevOps Agent via a webhook before evidence disappears.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.signadot.com/case-studies/how-laurel-brings-production-ready-validation-to-ai-native-development/?utm_source=tldr_devops&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=laurel_case_study&amp;amp;utm_content=headline">Laurel merges 1,700+ agent-authored PRs a month at 0.2% change failure rate (Sponsor)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>Agents now write 76% of Laurel&#039;s PRs. Each one is verified pre-merge in a production-like environment on their own cluster. Only the changed services spin up. Nothing else is duplicated. With Signadot and coding agents, their team of ~60 engineers ships 2,300+ verified PRs per month. Read the case study.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/affaan-m/ECC?utm_source=tldrdevops">ECC (GitHub Repo)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>ECC is an open-source engineering harness for coding agents that adds a reusable workflow around planning, testing, implementation, review, verification, memory, and continuous improvement. It ships with specialized agents, skills, hooks, rules, persistent memory, and security scanning, with strongest support for Claude Code plus integration paths for Codex and other agent environments.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/Gitlawb/openclaude?utm_source=tldrdevops">Openclaude (GitHub Repo)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>OpenClaude is an open-source command-line coding agent that works with multiple AI backends, including OpenAI-compatible APIs, Gemini, GitHub Models, Codex, and Ollama.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.datadoghq.com/blog/ai-agent-security-lessons/?utm_source=tldrdevops">What we learned about AI agent security by monitoring our agents (1 minute read)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>Datadog monitored its own AI agents to uncover security lessons, starting with building an inventory of agent components. The effort also traced sensitive data flows and tool calls to identify risks across the agent stack.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.cncf.io/blog/2026/08/31/opentelemetry-has-graduated-now-what-2/?utm_source=tldrdevops">OpenTelemetry has graduated… now what? (5 minute read)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>OpenTelemetry achieved graduated status within the Cloud Native Computing Foundation in May, making it one of the few projects to reach that tier alongside Kubernetes and Prometheus. Graduated status means the project&#039;s contributor health, security standards, governance processes, and adoption have been evaluated at a level suitable for enterprise use at any scale.</p>
+        </article>
+        <article>
+            <h2><a href="https://grafana.com/blog/how-to-monitor-hcp-terraform-and-terraform-enterprise-with-grafana-cloud/?utm_source=tldrdevops">How to monitor HCP Terraform and Terraform Enterprise with Grafana Cloud (8 minute read)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>Grafana 13.2 expands shared saved queries with search, RBAC, command palette access, and Terraform provisioning, while the new View panel sidebar improves exploration without edit permissions. Additional updates include Git Sync enhancements, a refreshed homepage, secure cloud data source authentication, improved variable editing, and dashboard organization.</p>
+        </article>
+        <article>
+            <h2><a href="https://ad.doubleclick.net/ddm/trackclk/N572608.5847589TLDRMEDIALLC/B36170213.450551104;dc_trk_aid=644705995;dc_trk_cid=258767843;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1">Going viral shouldn&#039;t mean going down (Sponsor)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>Microsoft Azure autoscales when traffic spikes—adjusting capacity automatically so you can skip the scramble. With more global regions than any other cloud provider, you&#039;ve always got room to grow. Scale with Azure →</p>
+        </article>
+        <article>
+            <h2><a href="https://aws.amazon.com/blogs/aws/amazon-ec2-r9g-and-r9gd-instances-powered-by-aws-graviton5-processors-are-now-generally-available/?utm_source=tldrdevops">Amazon EC2 R9g and R9gd instances powered by AWS Graviton5 processors are now generally available (4 minute read)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>Amazon EC2 R9g and R9gd instances are now generally available, powered by AWS Graviton5 processors.</p>
+        </article>
+        <article>
+            <h2><a href="https://newrelic.com/blog/observability/gcp-cost-optimization-tools?utm_source=tldrdevops">Choosing the Right GCP Cost Optimization Tools for Your Environment (11 minute read)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>GCP cost optimization becomes difficult when billing data is disconnected from operational telemetry, making cost anomalies harder to attribute and resolve.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.datadoghq.com/blog/monitor-azure-functions-hosting-plans/?utm_source=tldrdevops">Monitor Azure Functions across every hosting plan with Datadog (1 minute read)</a></h2>
+            <time datetime="2026-09-02T00:00:00.000Z">2026-09-02T00:00:00.000Z</time>
+            <p>Datadog Serverless Monitoring now traces requests, reports enhanced CPU metrics, and profiles code across all Azure Functions hosting plans.</p>
+        </article>
+        <article>
+            <h2><a href="https://buildkite.com/pricing/?utm_source=TLDR&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=2026-08-06_Primary_Buildkite&amp;amp;utm_content=header_when_code_volume_header_good_engineers_buried_header_good_engineers_buried">Good engineers are being buried, by CI they didn&#039;t choose, that doesn&#039;t fit their workflows. (Sponsor)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>Buildkite is built differently: refined primitives orchestrated with a control plane that provides control with zero compromise.OpenAI, Anthropic, Cursor, Meta, Uber, Shopify, Airbnb, Bazel, Backstage, vLLM and Reddit all standardized CI on Buildkite.Hosted runners or your own infra; any cloud, any OS, any chip; MCP, models and pipeline triggers for agentic development; your secrets and source code never leaving your hands.30 day, all-access trial with a real support engineer on standby. You deserve better CI. Kick the tires →</p>
+        </article>
+        <article>
+            <h2><a href="https://reactos.org/project-news/reactos-0416-released/?utm_source=tldrdevops">Introducing ReactOS 0.4.16 (10 minute read)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>ReactOS 0.4.16 adds a graphical installer, a combined live/install image, improved video, audio, networking, and storage support, and a new Server Core installation mode. The release also fixes a long-standing Nvidia slowdown caused by exhausted system page-table entries, introduces a new ATA driver for broader boot compatibility, adds asynchronous networking, and brings its Wine fork substantially closer to Wine 10.0.</p>
+        </article>
+        <article>
+            <h2><a href="https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/?utm_source=tldrdevops">Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles (3 minute read)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>Kubernetes 1.37 brings Pod Certificates and Cluster Trust Bundles to general availability, adding X.509 certificate issuance for TLS and mTLS directly into core Kubernetes. The feature is designed as an alternative to service account JWTs, which are bearer tokens, meaning anyone who receives a copy of the token can use it to impersonate the workload. Pod Certificates use proof-of-possession credentials, so a workload proves it holds a private key without ever sending that key to a peer. The Kubernetes project has also released Tinycert, a third-party signer for experimenting with Pod Certificates, since no built-in signers ship with core Kubernetes yet.</p>
+        </article>
+        <article>
+            <h2><a href="https://danluu.com/bug-blind/?utm_source=tldrdevops">Bug Blindness (12 minute read)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>Developers can become “blind” to bugs and poor UX by unconsciously learning workarounds, causing teams to perceive severely flawed software as high quality even when normal users struggle with it. Dogfooding helps only if engineers actively notice these adaptations. Deliberately pointing out hidden friction can train teams to recognize quality problems before they become normalized.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.datadoghq.com/blog/how-datadog-saves-money-by-optimizing-ai-usage/?utm_source=tldrdevops">How Datadog saves over $1 million each month by optimizing AI usage (1 minute read)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>Datadog saves more than $1 million monthly on AI usage through agent evaluations, spending guardrails, and context optimization. These measures let the company balance cost against performance without sacrificing either.</p>
+        </article>
+        <article>
+            <h2><a href="https://dustycloud.org/blog/but-where-does-taste-come-from/?utm_source=tldrdevops">But Where Does Taste Come From? (4 minute read)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>Taste develops through practicing a craft directly—trying, failing, making unexpected discoveries, and gradually forming a distinctive style—rather than simply judging outputs produced by others. Heavy use of generative AI can undermine that process by replacing practice with statistically average output and even acclimating users to AI-generated patterns, potentially weakening the judgment they hoped would differentiate them in the first place.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/checkstyle/checkstyle?utm_source=tldrdevops">checkstyle (GitHub Repo)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>checkstyle is an open-source static analysis tool for enforcing Java coding standards and best practices during development and CI. It runs configurable checks over source code, integrates through Maven or a standalone JAR, and can flag issues such as fall-through behavior, naming, formatting, imports, and other style or quality violations as part of an automated build.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/Lakr233/vphone-cli?utm_source=tldrdevops">vphone-cli (GitHub Repo)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>vphone-cli lets researchers boot a virtual iPhone on Apple Silicon Macs using Apple&#039;s Virtualization.framework and Private Cloud Compute research VM infrastructure. A single command handles the full pipeline from download through DFU restore to first boot. The tool includes five patch variants with increasing levels of security bypass, and exposes a control socket for screenshots, touch input, and clipboard access, which can be used for AI-driven end-to-end testing via a companion MCP server.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.cncf.io/blog/2026/08/28/scale-before-the-spike-predictive-autoscaling-for-gpu-workloads-on-kubernetes/?utm_source=tldrdevops">Scale before the spike: Predictive autoscaling for GPU workloads on Kubernetes (6 minute read)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>Two Adobe platform engineers built a predictive Kubernetes autoscaler after a production incident left users seeing 15-20% error rates because reactive scaling fired too late to help. The system uses a Bi-LSTM model embedded in a Go controller binary to forecast demand 10 minutes ahead, running inference every 60 seconds against the past hour of Prometheus metrics. A graduated scaler caps scale-out at 20 pods per minute to avoid overwhelming the scheduler, and a burst detector adds a heuristic safety net for traffic spikes the model wasn&#039;t trained on. In hackathon validation, 23 out of 23 checks passed, with the predictor catching simulated spike patterns 11 minutes early.</p>
+        </article>
+        <article>
+            <h2><a href="https://people.kernel.org/monsieuricon/creepy-crawlies?utm_source=tldrdevops">Creepy crawlies (7 minute read)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>AI scrapers now account for an estimated 98% of traffic to git.kernel.org, generating roughly 6 million daily requests and consuming 14–16 CPU cores across its five geo-distributed nodes just to render commits as HTML. Even proof-of-work challenges through Anubis only partially contain the load, forcing kernel.org to disable expensive anonymous features and reduce the number of crawlable URLs.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.atlassian.com/whitepapers/teamwork-dividend?utm_source=tldr&amp;amp;utm_medium=email&amp;amp;utm_campaign=P:twc*O:gdc*F:awareness*C:gated-pdf*H:fy27q1*I:tldr-aws-devops-quicklinks-aug31*&amp;amp;utm_sfdc-campaign_id=701QB00000oiIkPYAU">Fragmentation costs the Fortune 500 $161B...and only 6% of execs can point to AI ROI (Sponsor)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>Everyone&#039;s using AI, but without team-wide coordination, you get duplicated effort, siloed knowledge, and handoff friction. This Atlassian and AWS guide lays out an AI flow for real ROI. Grab yours</p>
+        </article>
+        <article>
+            <h2><a href="https://www.datadoghq.com/blog/federal-agencies-ai-spend-cloud-cost-management/?utm_source=tldrdevops">Beyond the $1 AI era: How federal agencies can build the evidence for FY27 renewals (1 minute read)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>Federal agencies can use Datadog Cloud Cost Management to compile cost, usage, and value evidence ahead of FY27 AI renewals.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.pulumi.com/blog/kubernetes-crds-as-provider-extensions/?utm_source=tldrdevops">Pulumi Kubernetes v4.34.0: CRDs as provider extensions (2 minute read)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>Pulumi has released version 4.34.0 of its Kubernetes provider, with the main addition being a new --extension flag that lets users extend the provider with any Kubernetes Custom Resource Definition by passing its manifest file to Pulumi.</p>
+        </article>
+        <article>
+            <h2><a href="https://blogs.oracle.com/observability/from-kubernetes-signals-to-action-deploy-kubernetes-default-alarms-with-oracle-log-analytics?utm_source=tldrdevops">From Kubernetes signals to action: Deploy Kubernetes Default Alarms with Oracle Log Analytics (8 minute read)</a></h2>
+            <time datetime="2026-08-31T00:00:00.000Z">2026-08-31T00:00:00.000Z</time>
+            <p>The Kubernetes Default Alarms Quick Start provides configurable cluster and namespace monitoring through OCI Marketplace and Resource Manager, standardizing alerting and routing by team ownership.</p>
+        </article>
+        <article>
+            <h2><a href="https://ad.doubleclick.net/ddm/trackclk/N572608.5847589TLDRMEDIALLC/B36170213.450551098;dc_trk_aid=644707429;dc_trk_cid=258767840;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1">Late-night patch panics are so 2023 🥱 (Sponsor)</a></h2>
+            <time datetime="2026-08-28T00:00:00.000Z">2026-08-28T00:00:00.000Z</time>
+            <p>You&#039;ve been there: code&#039;s ready to ship, everyone&#039;s excited—then someone spots a vulnerability. Suddenly it&#039;s an all-hands emergency and time to cancel your evening plans. Microsoft Azure bakes security in from the start. Microsoft Defender for Cloud helps keep your apps and code protected throughout the development lifecycle. Less last-minute surprises, more peace of mind. Ship fast. Ship safely. Do both at the same time. Build with built-in security → </p>
+        </article>
+        <article>
+            <h2><a href="https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/?utm_source=tldrdevops">Kubernetes v1.37: Garhwal (32 minute read)</a></h2>
+            <time datetime="2026-08-28T00:00:00.000Z">2026-08-28T00:00:00.000Z</time>
+            <p>Kubernetes v1.37, themed &quot;Garhwal&quot; after a Himalayan region of Uttarakhand, India, ships 67 enhancements: 16 promoted to Stable, 23 to Beta, 27 entering Alpha, and 1 deprecation or removal. Notable Stable graduations include the metrics.k8s.io API, which spent nearly nine years in Beta, and KYAML, a safer YAML subset for Kubernetes. The release also enables memory QoS and concurrent watch object decoding by default, and brings HorizontalPodAutoscaler scale-to-zero support to Beta. The 15-week cycle ran from May 18 to August 26, drawing contributions from up to 212 companies and 1,754 individuals.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.harness.io/blog/find-resilience-risks-automatically-then-confirm-them?utm_source=tldrdevops">Find Resilience Risks Automatically, Then Confirm Them (6 minute read)</a></h2>
+            <time datetime="2026-08-28T00:00:00.000Z">2026-08-28T00:00:00.000Z</time>
+            <p>RT Agents passively analyze Harness CD pipelines and Kubernetes workloads to detect resilience risks before production, then recommend, generate, and run chaos experiments or load tests to validate them. New capabilities include resilience dashboards, Resilience Scores, Java, JavaScript, and Python load testing, simplified Kubernetes onboarding, and a free plan.</p>
+        </article>
+        <article>
+            <h2><a href="https://grafana.com/blog/grafana-13-2-release-all-the-latest-features/?utm_source=tldrdevops">Grafana 13.2 release: easier ways to query and explore your data (8 minute read)</a></h2>
+            <time datetime="2026-08-28T00:00:00.000Z">2026-08-28T00:00:00.000Z</time>
+            <p>Grafana 13.2 expands shared saved queries with search, RBAC, command palette access, and Terraform provisioning, while the new View panel sidebar improves exploration without edit permissions. Additional updates include Git Sync enhancements, a refreshed homepage, secure cloud data source authentication, improved variable editing, and dashboard organization.</p>
+        </article>
+        <article>
+            <h2><a href="https://cloud.google.com/blog/topics/ai-infrastructure/state-of-ai-infrastructure-report-agent-governance-and-security/?utm_source=tldrdevops">Empowering autonomous agents with advanced security governance (5 minute read)</a></h2>
+            <time datetime="2026-08-28T00:00:00.000Z">2026-08-28T00:00:00.000Z</time>
+            <p>Agentic AI expands enterprise security risks because agents can access sensitive systems and act autonomously, creating threats such as prompt injection and tool poisoning. Organizations should shift from simply blocking access to governance through secure-by-default design, agent identity and permissions, centralized oversight, and human approval for critical actions.</p>
+        </article>
+        <article>
+            <h2><a href="https://about.gitlab.com/blog/when-code-is-abundant/?utm_source=tldrdevops">When code is abundant (31 minute read)</a></h2>
+            <time datetime="2026-08-28T00:00:00.000Z">2026-08-28T00:00:00.000Z</time>
+            <p>AI is making code abundant and shifting software development&#039;s central constraint from implementation to trust. As agents increasingly handle the lifecycle, enterprises need durable architecture for context, verification, governance, evidence, and organizational ownership across people, agents, and models.</p>
+        </article>
+        <article>
+            <h2><a href="https://hubs.la/Q04v88XG0?utm_source=tldrdevops">Where Walmart, IBM, Airtel, and Juniper Networks forge the future of OS search (Sponsor)</a></h2>
+            <time datetime="2026-08-28T00:00:00.000Z">2026-08-28T00:00:00.000Z</time>
+            <p>OpenSearchCon North America is where technical experts share how they run open source search, observability, and infrastructure at scale. You&#039;ll get real production lessons, two hands-on workshops (build an OpenTelemetry stack and an agentic AI search app yourself), and a $250 certification exam voucher just for attending in person. See the full schedule →</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/tt-a1i/archify?utm_source=tldrdevops">Archify (GitHub Repo)</a></h2>
+            <time datetime="2026-08-28T00:00:00.000Z">2026-08-28T00:00:00.000Z</time>
+            <p>Archify is a Node.js tool for Cursor, Claude Code, Codex CLI, and OpenCode that takes a codebase or system description and compiles it into an interactive HTML/SVG diagram. Agents produce typed JSON, and Archify converts it deterministically into a self-contained HTML file with motion, export options, and shareable URLs.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Generated on 2026-09-05T14:02:12.493Z</p>
+    </footer>
+</body>
+</html>
