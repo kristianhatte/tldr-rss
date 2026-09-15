@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TLDR INFOSEC news articles for AI consumption">
+    <title>TLDR INFOSEC News Feed</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1em;
+        }
+        article:last-child {
+            border-bottom: none;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        time {
+            color: #666;
+            font-size: 0.9em;
+        }
+        p {
+            color: #444;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TLDR INFOSEC News Feed</h1>
+        <p>Latest 50 articles from <a href="https://tldr.tech/">TLDR</a></p>
+    </header>
+    <main>
+        <article>
+            <h2><a href="https://www.securityweek.com/telus-warns-customers-of-account-breaches/?utm_source=tldrinfosec">Telus Warns Customers of Account Breaches (2 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>Telus says attackers used compromised credentials to access consumer accounts from February 2025 through June 2026. Exposed data included contact details, account and billing records, partial card numbers, subscriptions, and payment history. Attackers attempted service transfers and changed some services. Telus reset credentials, added monitoring, notified police, and offered identity-theft protection.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theregister.com/security/2026/09/11/more-jfrog-artifactory-bugs-under-attack-and-all-3-have-patches/5295943?utm_source=tldrinfosec">More JFrog Artifactory bugs under attack, and all 3 have patches (3 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>Attackers are exploiting CVE-2026-42018, CVE-2026-42016, and CVE-2026-82329 in JFrog Artifactory. Activity includes admin-account creation, Rust backdoors, Groovy plugins, web shells, token minting, and key theft. Wiz found 59 percent exposed to CVE-2026-42016 and 62 percent to CVE-2026-42018, so please patch exposed instances, restrict network access, and audit privileged logins.</p>
+        </article>
+        <article>
+            <h2><a href="https://ministryofcyberaffairs.com/news/skill-poisioning-turning-ai-agents-into-malware-droppers-warns-china-s-national-cert-66b8bba4-9ffd-4583-a6c7-122e8149e0e8?utm_source=tldrinfosec">Skill Poisoning Turns AI Agents Into Malware Droppers (3 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>China&#039;s National Computer Virus Emergency Response Center is warning of &quot;skill poisoning&quot; attacks, where counterfeit plugins compromise AI agents to secretly download malware. Analysts have already identified eight malicious skill packs in popular agent repositories that impersonate legitimate tools, granting attackers unauthorized file access and remote-control capabilities. These poisoned plugins exploit an AI agent&#039;s natural task-execution design, bypassing the need for a user to actually click a suspicious link.</p>
+        </article>
+        <article>
+            <h2><a href="https://monad.xyz/blog/writing-secure-code-with-llms?utm_source=tldrinfosec">Writing More Secure Code with LLMs: Why &quot;Make No Mistakes&quot; Falls Short (13 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>Generic security prompts and OWASP-style checklists failed to improve AI coding security and occasionally increased the frequency of high-severity bugs when the Monad Foundation engineering team tasked an assistant with writing secure code for a URL unfurler. Utilizing an expert prompt that incorporates a specific application threat model reduced validated security findings by approximately 43 percent. Defenders must replace generic checklists with expert prompts incorporating specific application threat models to harden AI-generated code.</p>
+        </article>
+        <article>
+            <h2><a href="https://jasondoyle.ie/whitepapers/ai-makes-familiar-cyber-attacks-cheaper-to-run?utm_source=tldrinfosec">AI Makes Familiar Cyber Attacks Cheaper to Run (48 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>Anthropic&#039;s threat intelligence report demonstrates that artificial intelligence lowers the cost of familiar cyber attacks against targeted organizations. The technology automates reconnaissance, retooling loops, and campaign coordination. Defenders must reassess their controls against repeated, parallel, and fast-adapting attack attempts despite the continued expense of compute resources and specialized exploits.</p>
+        </article>
+        <article>
+            <h2><a href="https://socket.dev/blog/malicious-twitch-browser-extension?utm_source=tldrinfosec">Malicious Twitch Browser Extension Exposes 30,000 Users&#039; OAuth Tokens to Russian Bot Service (6 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>Socket found that a cross-store browser extension, &#039;Twitch Enhanced Viewer | JeetBot&#039;, captures account OAuth tokens from Twitch pages. Current Chrome and Firefox builds add tokens to proxy redirect URLs for most viewed channels, but earlier builds sent tokens directly to set-token endpoints. The extension has about 31,000 installs across both stores, and anyone holding a token can access chat, whispers, account settings, and channel points. Remove the extension, disconnect Twitch sessions, and re-authenticate.</p>
+        </article>
+        <article>
+            <h2><a href="https://ad.doubleclick.net/ddm/trackclk/N572608.5847589TLDRMEDIALLC/B36170213.450550966;dc_trk_aid=644705992;dc_trk_cid=258766577;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1">Peak traffic shouldn&#039;t mean peak anxiety (Sponsor)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>Traffic skyrocketing? If you&#039;re on Microsoft Azure, there&#039;s no reason to panic. When user demand spikes, Azure adjusts capacity in the background. Performance stays steady with no manual intervention, no late-night firefighting, and no scrambling to explain why the site went down during the big launch. Build without limits with Azure</p>
+        </article>
+        <article>
+            <h2><a href="https://dev.profullstack.com/~anthony/blog/135-post.html?utm_source=tldrinfosec">OpenThreat: what a security tool found in the open, as one file (2 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>ThreatCrush launched OpenThreat to share public repository findings, threat indicators, and advisories in a single-file format without exposing private data or unredacted secrets. LogicSRC co-developed the specification to serve these descriptors at a standard web path. Nichedb.dev introduced the first directory for reading and distributing these descriptors across RSS, JSON, and APIs.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/ValentinNikolaev/php-analysis-tools-catalog?utm_source=tldrinfosec">PHP Analysis Tools Catalog (GitHub Repo)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>A curated, auto-updated catalog of PHP static-analysis, code-quality, linting, metrics, refactoring, and security tools.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/jfrog/boost?utm_source=tldrinfosec">Boost (GitHub Repo)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>Boost wraps the commands your agents already run, turning noisy logs into compact, structured context.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.rubyhack.ai/?utm_source=tldrinfosec">OpenAI agents carried out an undisclosed cyber-attack on RubyGems (4 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>Hundreds of malicious RubyGems packages appeared in May, attributed by researchers to internal OpenAI agents. The packages attempted API-key theft through an unreported RubyGems server flaw and used RubyDoc.info builds for arbitrary code execution. RubyGems halted registrations for four days, removed more than 500 packages, and later saw further uploads in May and June.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theregister.com/security/2026/09/13/security-through-obscurity-is-dead-and-ai-delivered-the-fatal-blow/5296000?utm_source=tldrinfosec">Security Through Obscurity Is Dead And AI Delivered The Fatal Blow (6 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>Artificial intelligence has delivered a fatal blow to security through obscurity by enabling the rapid discovery of deeply buried vulnerabilities in aging code and proprietary systems. Security experts warn that this rapid discovery creates immense pressure on defenders by exposing critical operational technologies. Defenders must respond by shifting away from endless patching toward proactive process improvements and systemic prevention.</p>
+        </article>
+        <article>
+            <h2><a href="https://joshuasaxe181906.substack.com/p/everyones-talking-past-each-other?utm_source=tldrinfosec">Everyone&#039;s Talking Past Each Other About the OpenAI/Huggingface Hack so Here&#039;s a Synthesized View (6 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>Joshua Saxes attempts to synthesize different perspectives from AI safety researchers, cybersecurity experts, and policymakers on the OpenAI/Huggingface hack. Alignment and security go hand in hand to provide traditional and AI-native controls, with policy also acting as a backstop. Security&#039;s job is to provide a deterministic framework to reduce the blast radius of what an agent can do, whereas alignment&#039;s job is to constrain what an agent wants to do.</p>
+        </article>
+        <article>
+            <h2><a href="https://industrialcyber.co/regulation-standards-and-compliance/enisa-launches-single-reporting-platform-as-eu-cyber-resilience-act-vulnerability-reporting-obligations-take-effect/?utm_source=tldrinfosec">ENISA launches Single Reporting Platform as EU Cyber Resilience Act vulnerability reporting obligations take effect (2 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>ENISA launched its Single Reporting Platform for Cyber Resilience Act notifications.</p>
+        </article>
+        <article>
+            <h2><a href="https://opensourcesecurity.io/2026/2026-09-daniel-cra?utm_source=tldrinfosec">CRA vulnerability reporting with Daniel Thompson (35 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>The Open Source Security podcast notes that the European Union Cyber Resilience Act requires manufacturers to report actively exploited vulnerabilities to ENISA.</p>
+        </article>
+        <article>
+            <h2><a href="https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html?utm_source=tldrinfosec">Attackers Use Passkey Phishing to Hijack Microsoft Cloud Accounts and Exfiltrate Data (5 minute read)</a></h2>
+            <time datetime="2026-09-15T00:00:00.000Z">2026-09-15T00:00:00.000Z</time>
+            <p>Threat actors target Microsoft enterprise users with passkey lures to bypass multi-factor authentication.</p>
+        </article>
+        <article>
+            <h2><a href="https://fingerprint.com/products/fingerprint-pro/?utm_source=tldrinfo&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=Primary09142026&amp;amp;utm_content=header_stolen_session_cookies">Stolen Session Cookies Don&#039;t Care About Your MFA (Sponsor)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>Attackers no longer need passwords. By stealing an active session, they bypass MFA, password rules, and login alerts entirely.Fingerprint catches what authentication can&#039;t see:→ A persistent device identifier ties every session to the device behind it, so a stolen token replayed from unfamiliar hardware stands out instantly.→ A single risk score rolls 20+ Smart Signals (Residential Proxy Detection, Browser Tampering, Virtual Machine Detection, and more) into one easy-to-use risk number.→ Hijacked sessions get caught without adding friction for legitimate users.🆓 Install Fingerprint with a few lines of code and get started for free</p>
+        </article>
+        <article>
+            <h2><a href="https://www.securityweek.com/trezor-says-347000-users-received-phishing-emails-after-brevo-hack/?utm_source=tldrinfosec">Trezor Says 347,000 Users Received Phishing Emails After Brevo Hack (2 minute read)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>Attackers abused a Brevo SAML SSO scoping flaw to access 138 accounts. They sent a fake Trezor security alert to 347,000 addresses linked to a site seeking wallet backups. About 2,500 recipients clicked before takedown, 20 minutes after detection. Brevo reported contact exfiltration from 43 accounts, and BitBox and CoinTracking were also affected.</p>
+        </article>
+        <article>
+            <h2><a href="https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html?utm_source=tldrinfosec">GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure (2 minute read)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>GitLab has patched CVE-2026-85706, a CVSS 10 path traversal bug in the repository commits API that let unauthenticated attackers read arbitrary files. watchTowr saw probes starting at 06:00 UTC on September 11, needing only one public project to exploit. Attackers can grab log files, config files, credentials, and CI/CD secrets. GitLab also fixed CVE-2026-87719 (CVSS 9.9), a deserialization bug exposing Advanced Search configs via Duo Chat GraphQL subscriptions. CISA added CVE-2026-85706 to its KEV catalog, giving federal agencies until September 14 to patch.</p>
+        </article>
+        <article>
+            <h2><a href="https://techcrunch.com/2026/09/12/revolut-confirms-customer-data-breach-through-fake-government-requests/?utm_source=tldrinfosec">Revolut confirms customer data breach through fake government requests (2 minute read)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>Revolut disclosed customer data after fraudulent requests arrived from a legitimate government email domain. Exposed records included identity and contact details, passports or driving licenses, and possibly verification selfies, statements, and transaction histories. Revolut says a limited number of customers were affected, blocked the sender, notified victims, and alerted the agency, police, and regulators.</p>
+        </article>
+        <article>
+            <h2><a href="https://isc.sans.edu/diary/The+SelfExpanding+Stolen+Inference+Supply+Chain+An+AI+Agent+Harvesting+and+ReServing+LLM+Access/33332?utm_source=tldrinfosec">The Self-Expanding Stolen Inference Supply Chain: An AI Agent Harvesting and Re-Serving LLM Access (5 minute read)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>An attacker&#039;s coding agent picked a SANS ISC honeypot as a free LLM backend and leaked 43 KB of its own control plane, including its offensive playbook, harvested API keys, and the operator&#039;s unproxied egress IP. The playbook hunts exposed LLM resale gateways, farms accounts via open registration, default credentials, and group_id authorization flaws, then aggregates the working keys into a self-hosted New-API gateway that re-serves them as five model names. Gateway operators should audit for those same weaknesses, and anyone routing an agent through a cheap LLM proxy should assume that endpoint is reading their project instructions and source context.</p>
+        </article>
+        <article>
+            <h2><a href="https://detect.fyi/where-do-detection-ideas-come-from-21dc281aebb9?utm_source=tldrinfosec">Where Do Detections Come From? (10 minute read)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>Detect.fyi detection engineers identify four information sources that can inform building detections: visibility, existing internal or external detections, environment, and threat intel. Detection engineers can choose any of these sources to start developing from and then use the other three as filters into what detections they should write. The authors also caution against focusing too much on trying to create detections for every piece of threat intel that comes out.</p>
+        </article>
+        <article>
+            <h2><a href="https://ctrlaltintel.com/bulletins/clickfix-stealers-and-mining/?utm_source=tldrinfosec">Behind the CAPTCHA: ClickFix, WallStealer and a Hidden Miner (4 minute read)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>A fake Cloudflare &quot;verify you&#039;re human&quot; page copies a hidden PowerShell command to the clipboard and tells the user to paste it into the Run box, which downloads malware into %TEMP%. The files on that server included two copies of WallStealer, which steals browser passwords, cookies, payment cards, and Telegram, Discord, Steam, and wallet data, and finds its C2 server by reading the display name off hardcoded Steam profiles instead of a fixed domain. A third file dropped an XMRig crypto miner into C:\ProgramData\NVDisplay, so watch for pasted commands running from Run, new executables in %TEMP%, and machines requesting Steam profile pages.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.ory.com/ory-agent-security?utm_campaign=494758105-ADV-2026-Q3-TLDR%20PLACEMENT-2026-09-14&amp;amp;utm_source=tldr&amp;amp;utm_medium=infosec-newsltter">When AI agents use human identities, they leave problems no one is accountable for (Sponsor)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>Your audit log won&#039;t help if it points to a service account and a long-gone container. Ory Agent Security gives every agent an identity, scoped and revocable. It works inside the harness, applying fine-grained authorization for every shell command, write, and API call. Join the launch webinar or get free coverage for a limited time.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/PatchRequest/BusyWork?utm_source=tldrinfosec">BusyWork (GitHub Repo)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>BusyWork is a Rust library that replaces sleep() with real, varied work to evade EDR, anti-cheat, and dynamic analysis systems.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/tailscale/tailcat?utm_source=tldrinfosec">Tailcat (GitHub Repo)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>Tailcat is a remix of Tailscale open source pieces to act like netcat, but over Tailscale&#039;s data plane, without Tailscale&#039;s control plane.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/modem-dev/hunk?utm_source=tldrinfosec">Hunk (GitHub Repo)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>Hunk is a review-first terminal diff viewer for agent-authored changesets.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theregister.com/security/2026/09/10/hundreds-of-ai-agents-helped-papercut-attacker-hit-395-orgs-and-some-went-off-script/5295650?utm_source=tldrinfosec">Hundreds of AI agents helped PaperCut attacker hit 395+ orgs, and some went off script (3 minute read)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>An attacker exploited PaperCut CVE-2026-81578 and CVE-2026-82078, compromising 440 instances at 395 organizations in 48 countries. Education accounted for 204 victims. The US had 98 and the UK 59. One school reached domain-admin compromise within seven minutes. Updated PaperCut maintenance releases are available, so upgrade ASAP.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theguardian.com/technology/2026/sep/12/we-must-slow-the-pace-ceo-of-anthropic-calls-for-an-ai-slowdown?utm_source=tldrinfosec">‘We must slow the pace&#039;: CEO of Anthropic calls for an AI slowdown (4 minute read)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>Anthropic CEO Dario Amodei proposed independent evaluators with employee-level access to test safeguards, report incidents, and assess systems during training. OpenAI&#039;s Sam Altman said it would match that access. Amodei cited an incident where OpenAI agent swarms carried out unrequested attacks against Hugging Face targets, warning that stronger misaligned systems could cause far greater damage.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.huntress.com/blog/fake-gta6-download-malware-analysis?utm_source=tldrinfosec">Grand Theft Auto VI hype leads to malware (5 minute read)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>Fake &quot;leaked GTA6&quot; ISOs spread through SEO poisoning, gaming forums, and torrent sites deliver a Russian-language installer that pre-warns of a &quot;License not found&quot; error, giving victims a reason for the missing game while payloads drop into %TEMP%. Huntress found one sample bundling NJRAT, DCRAT, the Mercurial Grabber infostealer, and Chaos ransomware, which runs as a wiper that deletes shadow copies and destroys files. Everything in it is years old and detected by current Defender, so hunt for GTA6-branded executables in %TEMP% and hosts file entries sinkholing AV domains, then reimage affected hosts.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.bleepingcomputer.com/news/security/over-36-000-plex-servers-unpatched-against-recently-disclosed-flaws/?utm_source=tldrinfosec">Over 36,000 exposed Plex servers vulnerable to recent flaws (2 minute read)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>Shadowserver reports over 36,000 internet-exposed Plex Media Servers running v1.43.2 or earlier, with 16,000 in the US.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days?utm_source=tldrinfosec">Threat Actor Generates 1M Personalized Fraud Emails in 3 Days (4 minute read)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>An unidentified actor sent more than one million invoice-fraud emails from August 3 to 5 impersonating ServiceNow, sought payments near $50,000, and targeted accounts-payable staff.</p>
+        </article>
+        <article>
+            <h2><a href="https://therecord.media/nsa-reorganization-five-mission-centers?utm_source=tldrinfosec">Thorough reorganization at NSA will create five &#039;mission centers,&#039; including cyber and AI (3 minute read)</a></h2>
+            <time datetime="2026-09-14T00:00:00.000Z">2026-09-14T00:00:00.000Z</time>
+            <p>NSA is being recast into five mission centers covering China, cybersecurity, AI, combat support, and global intelligence under a 30-day clock set by Gen.</p>
+        </article>
+        <article>
+            <h2><a href="https://finance.yahoo.com/markets/stocks/live/apple-event-live-updates-first-foldable-iphone-iphone-18-pro-and-watches-expected-122840434.html?utm_source=tldrinfosec">Apple debuts iPhone Duo, its first foldable, at $1,999 (5 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>New CEO John Ternus led his first keynote, headlined by the iPhone Duo, Apple&#039;s first foldable, a passport-style device with a 5.4-inch outer display and a 7.6-inch inner display that automatically reflows apps based on how the phone is folded, starting at $1,999. Apple also unveiled the iPhone 18 Pro and Pro Max ($1,199/$1,299, up $100 from last year) with new A20 Pro processors, a variable mechanical aperture camera, and 24-30 hour battery life, alongside the Apple Watch Series 12 and Ultra 4, which add a 5-second heart rate sensor Apple claims is more accurate than a chest strap.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-says-its-next-generation-processors-could-be-made-at-samsung-double-sourcing-with-tsmc-hints-at-massive-volume-requirements?utm_source=tldrinfosec">OpenAI may double-source next-gen AI chips at Samsung, alongside TSMC (3 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>OpenAI Korea GM Harrison Kim revealed the company has made real progress with Samsung Electronics on joint production and research for its next-generation chips, expanding a relationship that so far has been mostly about memory supply and enterprise software. OpenAI&#039;s current inference ASIC, Jalapeño, was designed with Broadcom and built at TSMC in under 18 months and is already in mass production there, so any Samsung involvement more plausibly targets its successor, which is reportedly approaching tapeout.</p>
+        </article>
+        <article>
+            <h2><a href="https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/?utm_source=tldrinfosec">Introducing CUDA Rust for High-Performance GPU Kernel Development (5 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>NVIDIA has announced CUDA Rust and introduced two specialized compilation tracks that allow developers to author and optimize GPU compute kernels directly in Rust. This release brings Rust&#039;s strong compile-time memory safety guarantees and modern tooling ecosystem to GPU-accelerated workloads. Developers implementing embedded vision, intensive sensor fusion, and real-time state estimation on mobile platforms can now exploit GPU compute power while minimizing memory-related crashes and runtime concurrency bugs.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.cnbc.com/2026/09/10/tsmc-august-revenue-chip-ai.html?utm_source=tldrinfosec">TSMC&#039;s August revenue jumps 53% to a record high, plans High-NA EUV adoption for 2030 (3 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>TSMC posted NT$514.8 billion ($16.1 billion) in August revenue, up 53.3% year-over-year and 10.1% from July, hitting a fresh monthly record as AI-driven chip demand keeps outpacing supply. It came alongside a separate announcement with Dutch equipment maker ASML: TSMC plans to bring ASML&#039;s High-NA EUV lithography into large-scale manufacturing starting in 2030 for its most advanced nodes, as AI accelerators push toward increasingly complex transistor architectures.</p>
+        </article>
+        <article>
+            <h2><a href="https://payloadspace.com/besxar-flies-suborbital-semiconductor-demo?utm_source=tldrinfosec">Besxar flies first suborbital semiconductor manufacturing demo, banking on free vacuum in space (2 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>Besxar, a $9.35 million seed-funded startup, flew its first mission on July 5 aboard a SpaceX Falcon 9 alongside a Starlink batch, carrying its own semiconductor wafers plus test wafers from the University of Virginia and UT Austin. The company&#039;s pitch is simple: Earth-based fabs spend billions on pumps to create the vacuum semiconductors need, but in space vacuum is free, so Besxar wants to manufacture higher-quality, lower-cost wafers in orbit and return them to Earth to sell.</p>
+        </article>
+        <article>
+            <h2><a href="https://vllm.ai/blog/2026-09-10-minimax-m3-mi355x?utm_source=tldrinfosec">vLLM triples MiniMax M3 inference throughput on AMD&#039;s MI355X through systematic bottleneck chasing (6 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>AMD and Embedded LLM teams took MiniMax M3&#039;s day-0 vLLM implementation from 109.1 to 342.4 output tokens/s/GPU on AMD&#039;s Instinct MI355X, a 3.14x gain, by repeatedly asking five questions as the bottleneck kept shifting: what local shape reached each rank after tensor-parallel sharding, what work repeats every layer, which bytes actually move, whether a claimed fast path actually executed, and which queue grows once kernels stop being the limiter. Big wins came from fusing the model&#039;s shared expert into the same grouped GEMMs as routed experts (up to 30% faster at low concurrency), and reusing sparse-attention block selections across adjacent layers instead of recomputing per layer.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.tomshardware.com/tech-industry/big-tech/lg-strongly-denies-tv-security-claims-says-tracking-and-snooping-concerns-not-true-online-investigation-claims-216-000-000-spy-tvs-record-audio?utm_source=tldrinfosec">LG denies claims its smart TVs constantly record and upload audio (4 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>Gamers Nexus published a two-hour investigation, done with security researchers MrBruh and uturn using packet capture and firmware analysis, alleging LG&#039;s smart TVs constantly log and upload user data even offline or in standby, scan local Wi-Fi networks for other devices, and record and store ambient audio through the TV&#039;s microphone for later retrieval, even when the TV appears off. LG called the claims untrue, saying its TVs only process voice data when the remote&#039;s voice button is pressed or its &quot;Hi LG&quot; wake word is detected after a user manually enables far-field voice recognition, with wake-word audio processed entirely on-device and deleted immediately if no match is found.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.cnbc.com/2026/09/09/google-finland-ai-infrastructure-investment.html?utm_source=tldrinfosec">Google commits $15B to Finland data centers, explores nuclear power for the buildout (3 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>Google plans to invest at least $15 billion in Finnish AI infrastructure through 2028, its largest single investment in Europe, building on over 15 years of presence there. Alongside the buildout, Google signed a 22-year power agreement with Finnish utility Fortum and said it will explore business models that could support new nuclear reactors at Fortum&#039;s Loviisa site, tying the compute expansion directly to a long-term power source.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.reuters.com/world/asia-pacific/chinas-ai-chipmakers-raise-prices-high-bandwidth-memory-shortage-bites-2026-09-10?utm_source=tldrinfosec">Huawei and Cambricon hike AI chip prices 20-50% as HBM shortage forces grey-market buying (3 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>Chinese AI chipmakers, including Huawei and Cambricon, have sharply raised prices for current and next-gen processors.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.a16z.news/p/introducing-covenant?utm_source=tldrinfosec">Covenant unveils Anthem, a heavy-payload strike missile built to be mass-produced across three countries (3 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>Anthem is a long-range precision strike weapon aimed at a gap Covenant argues current Western arsenals lack.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.xpeng.com/news/01a080371029a057bc8e8a02a2c6012b?utm_source=tldrinfosec">XPENG&#039;s IRON humanoid walks off its new automotive-grade production line (3 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>XPENG commissioned its humanoid robot production lines, and its IRON robot autonomously walked off them after completing assembly, a step the company frames as moving from R&amp;D prototypes to real line manufacturing.</p>
+        </article>
+        <article>
+            <h2><a href="https://thenextweb.com/news/analog-devices-alif-semiconductor-edge-ai-acquisition?utm_source=tldrinfosec">Analog Devices pays $1.35B for edge AI chipmaker Alif Semiconductor (4 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>Analog Devices agreed to buy Alif Semiconductor for $1.35 billion cash plus up to $200 million contingent on performance, adding microcontrollers built to run neural networks directly on-device rather than sending data to a data center.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.scmp.com/tech/big-tech/article/3366884/jdcom-deploy-3-million-robots-fully-automate-logistics?utm_source=tldrinfosec">JD.com plans 3 million robots and a 100,000-accelerator Physical AI cluster (5 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>JD Logistics plans to procure 3 million robots, 1 million autonomous vehicles, and 100,000 delivery drones over five years to automate picking, sorting, transport, and last-mile delivery.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.prnewswire.com/news-releases/vention-opens-physical-ai-lab-to-bridge-ai-research-and-scalable-industrial-deployment-302872841.html?utm_source=tldrinfosec">Vention opens a Physical AI lab tied directly to thousands of factories (5 minute read)</a></h2>
+            <time datetime="2026-09-11T00:00:00.000Z">2026-09-11T00:00:00.000Z</time>
+            <p>Vention opened a Montreal lab focused on robotic manipulation, industrial data collection, and post-training robotics foundation models using learning-from-demonstration, reinforcement learning, vision models, and motion planning.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.salesforce.com/plus/experience/dreamforce_2026?d=7013y000002A9FfAAK&amp;amp;nc=701ed00000DLbbyAAD&amp;amp;utm_source=tldr&amp;amp;utm_medium=display&amp;amp;utm_campaign=amer_us_cross-cloud_cross-industry&amp;amp;utm_content=cross-segment_pg-mtp_7013y000002A9FfAAK_english_df-2026_header_dreamforce_starts_5">Dreamforce starts in 5 days. Stream it all live, for free (Sponsor)</a></h2>
+            <time datetime="2026-09-10T00:00:00.000Z">2026-09-10T00:00:00.000Z</time>
+            <p>From accelerating vulnerability detection to creating observability headaches, AI is putting security teams to the test. That&#039;s why protecting data, governing AI agents, and building securely at scale are core focuses at Dreamforce.The Security Keynote lays out how to outpace evolving threats and accelerate AI with trust, visibility, and guardrails. Then, the AIforce Keynotewill break down how business logic and governance can power intelligent experiences everywhere.Register for free to stream Dreamforce live on Salesforce+.																											</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.talosintelligence.com/clearfake-webdav-infection-chain?utm_source=tldrinfosec">ClearFake WebDAV Infection Chain Delivers Amatera Stealer, ZigCryptoStealer, and NetSupport Manager (17 minute read)</a></h2>
+            <time datetime="2026-09-10T00:00:00.000Z">2026-09-10T00:00:00.000Z</time>
+            <p>Cisco Talos identified two WebDAV-based infection chains delivering the Amatera Stealer to facilitate untargeted credential and cryptocurrency theft. The initial chain executed a DLL named &quot;verification.google&quot; at a Ukrainian government organization. A parallel &quot;pf.ch&quot; chain used ClearFake JavaScript stored on the BNB Smart Chain, alongside a fake Google CAPTCHA ClickFix prompt, to task secondary payloads, including ZigCryptoStealer and NetSupport Manager.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.csoonline.com/article/4219626/adobe-commerce-max-severity-bug-comes-under-active-attack.html?utm_source=tldrinfosec">Adobe Commerce max-severity bug comes under active attack (3 minute read)</a></h2>
+            <time datetime="2026-09-10T00:00:00.000Z">2026-09-10T00:00:00.000Z</time>
+            <p>Threat actors are actively exploiting CVE-2026-75650, a max-severity unauthenticated code execution vulnerability dubbed StyleSmuggler, to compromise online stores running Adobe Commerce and Magento Open Source. Exploitation began on September 4, with the deployment of a Rust backdoor and a separate PHP web shell. Adobe released emergency hotfix VULN-393411 to address the flaw, prompting Sansec to warn that patching alone is insufficient for stores that may already be compromised.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Generated on 2026-09-15T15:44:30.872Z</p>
+    </footer>
+</body>
+</html>
