@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TLDR INFOSEC news articles for AI consumption">
+    <title>TLDR INFOSEC News Feed</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1em;
+        }
+        article:last-child {
+            border-bottom: none;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        time {
+            color: #666;
+            font-size: 0.9em;
+        }
+        p {
+            color: #444;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TLDR INFOSEC News Feed</h1>
+        <p>Latest 50 articles from <a href="https://tldr.tech/">TLDR</a></p>
+    </header>
+    <main>
+        <article>
+            <h2><a href="https://www.semperis.com/ready1/?utm_source=tldr&amp;amp;utm_medium=pd&amp;amp;utm_campaign=2026-10-23_tldr_infosec_primary_semperis_technologies_inc&amp;amp;utm_content=header_worst_time_crisis&amp;amp;utm_term=2026-10-23_tldr_infosec">The Worst Time to Test Your Crisis Plan? During the Crisis (Sponsor)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>When a cyberattack strikes, preparation is everything. Ready1 lets security teams stress-test incident response plans, run realistic tabletop exercises, assign roles, coordinate communications, track critical tasks, and document every move in real time.Built to keep working even when core systems go down, Ready1 turns chaos into coordinated action.Find the gaps before attackers do. Sharpen your team&#039;s readiness. Make sure everyone knows exactly what to do when every minute counts.Because a crisis plan shouldn&#039;t just look good in a slide deck. It should perform when it matters most.Test-drive your cyber readiness</p>
+        </article>
+        <article>
+            <h2><a href="https://www.notebookcheck.net/Capcom-confirms-major-data-breach-affecting-more-than-11-7-million-Capcom-ID-accounts-worldwide.1431069.0.html?utm_source=tldrinfosec">Capcom Confirms Major Data Breach Affecting 11.7M Capcom ID Accounts (2 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Capcom disclosed that it suffered a data breach involving its Capcom ID service. The attackers stole account details of 11.7M accounts, including email addresses, account creation dates, last login time, total logins, and the most recent login IP. A smaller number of accounts also had personal information leaked.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theregister.com/security/2026/10/21/litellm-supply-chain-attack-hoovers-up-passwords-and-secrets/5304548?utm_source=tldrinfosec">LiteLLM supply chain attack hoovers up passwords and secrets (3 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Attackers compromised LiteLLM&#039;s release process and published version 1.107.0 through PyPI and Docker. The package contained an infostealer and a remote access trojan that ran when Python started. It collected browser, AWS, Google Cloud, Azure, LLM API, SSH, GPG, and shell-history secrets, encrypted them, and sent them to an attacker domain. PyPI and Docker removed the package. Anyone who ran it should rotate credentials and check for the published indicators.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.infoworld.com/article/4239276/gitlab-critical-patches-include-one-for-a-bug-that-allows-code-execution-by-unauthenticated-users.html?utm_source=tldrinfosec">GitLab critical patches include one for a bug that allows code execution by unauthenticated users (3 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>GitLab released patches for 12 issues, including CVE-2026-110264, a critical integer-overflow flaw in its regular-expression compiler. An unauthenticated attacker could execute arbitrary code on affected CE/EE servers. Fixes cover versions 18.11.13 through 19.5.1. Affected releases date back to 7.0. The update also fixes CVE-2026-15723, which let an authenticated OmniAuth SAML user take over an LDAP-backed account when LDAP auto-linking was enabled. GitLab says the patches include database migrations, so single-node deployments may require downtime.</p>
+        </article>
+        <article>
+            <h2><a href="https://trufflesecurity.com/blog/aws-key-quarantine-is-not-revocation?utm_source=tldrinfosec">AWS Key Quarantine is Not Revocation (6 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>When AWS detects leaked keys, it will apply a quarantine policy to the IAM user associated with the key that denies certain sensitive actions. Truffle Security audited the quarantine policy and found significant gaps such as the ability to read secrets from Secrets Manager or parameters from Parameter Store, the ability to run a command on a running EC2 instance, and the ability to download S3 objects via GetObjectVersion. Truffle Security noted that beyond quarantine, revocation remains a major gap, with many of the keys they tested exposed for years.</p>
+        </article>
+        <article>
+            <h2><a href="https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned?utm_source=tldrinfosec">How Abliterated Models Can Get You pwned (5 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>To test the process of creating a backdoored model, ProjectDiscovery researchers fine-tuned Qwen2.5-7B to exfiltrate a .env file when it encounters a trigger phrase. The researchers achieved this with a rented GPU and a small dataset containing 20% poisoned prompts. Backdoored models are incredibly difficult to detect, so teams should use strong behavioral filters and avoid downloading models from untrusted sources.</p>
+        </article>
+        <article>
+            <h2><a href="https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks?utm_source=tldrinfosec">The Current Landscape of OAuth Attacks (16 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Attackers have shifted to stealing OAuth access and refresh tokens, bypassing MFA and surviving password resets, using device code phishing, consent screens for impersonated or vaguely named apps, and redirect_uri abuse that sends victims from real IdP domains to attacker pages. Unit 42 found PhaaS kits reusing the same anti-bot and Cloudflare RUM tokens across campaigns, along with AES-GCM payloads decrypted at runtime on Cloudflare Workers and LLM-generated lures, though the report gives no victim counts. Defenders should replace end-user consent with admin approval workflows, audit registered redirect_uri values for unverified domains, and flag device codes pasted from untrusted sources.</p>
+        </article>
+        <article>
+            <h2><a href="http://workbrew.com/?utm_campaign=Secondary10162026&amp;amp;utm_source=tldrinfosec&amp;amp;utm_medium=newsletter">Open source already runs your company. Who&#039;s securing it? (Sponsor)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Workbrew secures the open source running your company across Homebrew, npm, apps, IDE extensions, and more. See what&#039;s installed, patch what&#039;s vulnerable, and secure the software your teams run. Watch CEO John Britton demo it live, or start free, with no device or user limits.</p>
+        </article>
+        <article>
+            <h2><a href="https://indurex.ai/?utm_source=tldrinfosec">Indurex (Product Launch)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Indurex provides SafeGuard AI, security software for industrial cyber-physical systems. It analyzes control, safety, alarm, process-history, and IT-security data to flag anomalies and changes to engineering configurations, protection settings, and safety functions.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/Semperis/EntraGoat?utm_source=tldrinfosec">EntraGoat (GitHub Repo)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>EntraGoat is a deliberately vulnerable Microsoft Entra ID infrastructure for security professionals to try to attack or defend.</p>
+        </article>
+        <article>
+            <h2><a href="https://blogs.cisco.com/cisco-devnet/antares-security-analyst-laptop-part-1?utm_source=tldrinfosec">Antares: a Security Analyst That Never Leaves Your Laptop – Security Loop Series, Part 1 (10 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Antares-1B is a Cisco model, post-trained from IBM Granite 4.0 1B, that locates vulnerable files offline by running up to 15 read-only sandboxed shell commands against a repo given only a CWE description. Cisco&#039;s own benchmark placed it fourth in file F1 on the 500-repo VLoc Bench, ahead of Gemini 3 Pro and with the best recall of any system tested, and the author&#039;s Apple M1 run reproduced about 80% of that score at roughly a minute per repo. Results export as SARIF 2.1.0 for CI gating, though noisy shortlists and a steep accuracy drop on repos beyond a few megabytes make it a triage aid rather than a detector.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/?utm_source=tldrinfosec">Tech and Security Companies Respond to PHP2Shell Vulnerabilities (5 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>PHP2Shell, CVE-2026-109618 and CVE-2026-109619, enable unauthenticated remote code execution. PHP released fixes on October 21, after exploitation attempts began on October 17. Cisco, AWS, Google Cloud, Ubuntu, Debian, Palo Alto Networks, Sophos, and others issued patches, mitigations, or detection rules. CISA, UK NCSC, CERT-EU, and other agencies urge immediate updates, especially for internet-facing systems. Some European government, school, and hospital sites were taken offline.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security?utm_source=tldrinfosec">TiDB Breach Exposes Flawed Cloud Security Assumptions (6 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>PingCAP disclosed that attackers used stolen service-account credentials to access TiDB systems from September 9 to October 7, copying data and source code. FulcrumSec claims it also obtained customer metadata, API keys, Jira tickets, SQL histories, and a four-year TiDB Cloud connection log. Customer databases were reportedly untouched, but query logs and diagnostics can contain connection strings, secrets, and sensitive records.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.quarkslab.com/state-of-post-quantum-cryptography-implementations.html?utm_source=tldrinfosec">State of Post-Quantum Cryptography implementations (17 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Quarkslab&#039;s differential fuzzer DeltAFLy found that seven of ten tested libraries, including liboqs, AWS-LC, and libcrux, accepted malformed ML-DSA private keys with out-of-range coefficients that can bias rejection sampling and leak secret key material, while only OpenSSL, BoringSSL, and SymCrypt rejected them. The same campaign uncovered an OID collision bug in RustCrypto&#039;s XMSS code that made imported XMSSMT public keys fail verification. The post also surveyed PQC support across more than 20 open-source libraries, finding ML-KEM and ML-DSA nearly universal while HQC, Classic McEliece, and X-Wing remain sparsely implemented.</p>
+        </article>
+        <article>
+            <h2><a href="https://techcrunch.com/2026/10/22/developer-platform-railway-urges-all-users-to-revoke-secret-keys-after-cyberattack/?utm_source=tldrinfosec">Developer platform Railway urges ‘all users&#039; to revoke secret keys after cyberattack (2 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Railway says attackers accessed encrypted environment variables and decrypted some customer secrets.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.neowin.net/news/microsoft-entra-id-ending-native-sms-authentication-pushing-users-to-passkeys/?utm_source=tldrinfosec">Microsoft Entra ID ending native SMS authentication, pushing users to passkeys (2 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Microsoft will retire its built-in SMS and voice MFA in Entra ID on February 1, 2027 (July 1, 2027 for Global Administrators and external users), forcing SMS-only users into a blocking passkey registration at sign-in unless their organization purchases a third-party telephony provider through the Microsoft Security Store.</p>
+        </article>
+        <article>
+            <h2><a href="https://daniel.haxx.se/blog/2026/10/22/ignore-the-slop/?utm_source=tldrinfosec">“ignore the slop” (3 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>curl maintainer Daniel Stenberg said every one of the hundreds of vulnerability reports curl received in recent months involved AI, but hallucinated slop had largely disappeared since spring 2026, leaving maintainers with a harder problem of high-volume, accurate, overly wordy reports they cannot ignore.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.semperis.com/lightning/?utm_source=tldr&amp;amp;utm_medium=pd&amp;amp;utm_campaign=2026-10-22_tldr_infosec_primary_semperis_technologies_inc&amp;amp;utm_content=header_lightning_identity_security&amp;amp;utm_term=2026-10-22_tldr_infosec">Lightning: Identity Security for the AI Era (Sponsor)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>Identity attacks quickly become business crises. The Semperis Lightning Platform helps you strengthen security posture and readiness while accelerating incident detection and response—so critical business operations can continue through cyber disruption.Assess identity exposures across multi-forest, multi-tenant environmentsDetect and disrupt both conventional and agentic identity attacksManage incident response from a single workflowAI attacks move at machine speed. Your defenses need to move faster.Discover how Lightning empowers rigorous defense and recoverability of your identity infrastructure.Explore Lightning</p>
+        </article>
+        <article>
+            <h2><a href="https://arstechnica.com/security/2026/10/the-internet-goes-on-high-alert-after-discovery-of-8-compromised-tls-certs/?utm_source=tldrinfosec">The Internet goes on high alert after discovery of 8 compromised TLS certs (3 minute read)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>Eight eMudhra intermediate TLS certificates had private keys of only 3 to 8 bits, allowing anyone who recovered them to sign browser-trusted certificates for arbitrary servers. Browsers, several apps, and programming languages have blocked the certificates. VPN users face the immediate risk from active man-in-the-middle attacks. Updating Linux distributions, embedded systems, IoT devices, and bundled trust stores remains a long remediation effort.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/?utm_source=tldrinfosec">Stolen UpdraftCentral Keys Used to Backdoor WordPress Sites (2 minute read)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>A threat actor breached the popular WordPress backup and security plugin developer TeamUpdraft&#039;s customer database. In addition to customer billing and order history, the attackers also stole password hashes, two-factor authentication information, and connection keys for UpdraftCentral, UpdraftVault, and UpdraftClone services. These connection keys can be used to remotely issue commands to vulnerable websites.</p>
+        </article>
+        <article>
+            <h2><a href="https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/?utm_source=tldrinfosec">Widespread PHP Flaw May Cause Many Site Outages Today (3 minute read)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>PHP released emergency fixes for two exploited zero-days, CVE-2026-109618 and CVE-2026-109619. They enable remote code execution, denial of service, and data exposure on servers running PHP 5.4 or later. Government sites reportedly went offline. Cloudflare has deployed WAF rules. The fixed versions are PHP 8.5.12, 8.4.27, 8.3.36, and 8.2.35. Patch exposed servers now and watch for web-shell deployment.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem/?utm_source=tldrinfosec">Package Managers Have an Integrity Problem (4 minute read)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>If efforts to reduce supply chain attacks via developer compromise succeed, attacks will shift to attacking package registries as the next weakest link. Some package managers store hashes in a lock file. However, they often use these for purposes other than cryptographic integrity. Similarly, support for signatures is not consistent and often not verified by default.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.securityweek.com/context-is-king-in-the-fight-against-modern-cyberattacks/?utm_source=tldrinfosec">Context is King in the Fight Against Modern Cyberattacks (3 minute read)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>Traditionally, defensive security has taken a reactive model, searching for specific attacks and responding to a single attack vector. Modern defenses need a contextual view to assess whether a seemingly benign action is anomalous or risky in the context in which it occurs. To use contextual security practices, teams should ensure they have enough quality data, clear boundaries on what actions require human oversight, and the ability to reverse any automated actions.</p>
+        </article>
+        <article>
+            <h2><a href="https://medium.com/@adan.alvarez/i-gave-14-llms-aws-keys-heres-what-they-wanted-to-do-next-48585761a11b?utm_source=tldrinfosec">I Gave 14 LLMs AWS Keys. Here&#039;s What They Wanted to Do Next (6 minute read)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>Adan Alvarez provided 14 LLMs with AWS keys and instructed them to handle 13 post-compromise scenarios to better understand how models exploit AWS accounts. 12 of the 14 models began by calling GetCallerIdentity, while the others started with ListUsers. Most created new IAM users to establish persistence. When models knew a secret was available, they tried to retrieve it 87% of the time. However, only 11% proposed any destructive actions.</p>
+        </article>
+        <article>
+            <h2><a href="https://hubs.ly/Q04wWxZc0">Human-in-the-loop won&#039;t save your AI security program (Sponsor)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>When approval fatigue turns sign-offs into rubber stamps, you need more than good judgment to keep AI secure. Gray Swan&#039;s eBook lays out 5 governance implications for AI security, along with 3 questions every board should be asking right now. Get your copy</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/OpenVanta/GrantGuard?utm_source=tldrinfosec">GrantGuard (GitHub Repo)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>GrantGuard audits the permissions that have been granted to Claude Code when clicking “always allow.” GrantGuard classifies and groups permissions into risk groups and provides a UI for review and removal.</p>
+        </article>
+        <article>
+            <h2><a href="https://asymptotelabs.ai/?utm_source=tldrinfosec">Asymptote Labs (Product Launch)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>Asymptote Labs provides Beacon, an open-source telemetry layer for AI agents. It collects activity from more than 20 agent harnesses and normalizes it into an OpenTelemetry-based data model. Its enterprise platform enforces policy guardrails during prompts and tool execution, blocking unsafe actions in real time.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/aixisstudio/Snitch?utm_source=tldrinfosec">Snitch (GitHub Repo)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>Snitch is a real-time network traffic visualizer to see every connection your computer is making</p>
+        </article>
+        <article>
+            <h2><a href="https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes?utm_source=tldrinfosec">Claude Security now scans continuously and tracks fixes (4 minute read)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>Claude Security now rescans connected repositories as code changes, marking findings fixed when the fix lands and reopening them automatically if the issue reappears. Each project carries an editable threat model and team knowledge base that shape severity ratings and attack-path explanations, and multi-repo projects let it catch trust-boundary bugs between services. A new API, webhooks, an MCP connector, and role-based access controls fit it into existing triage workflows, with the public beta open to Claude Enterprise customers alongside $25,000 in monthly credits for two months.</p>
+        </article>
+        <article>
+            <h2><a href="https://arstechnica.com/gadgets/2026/10/does-opting-out-of-smart-tv-tracking-work-research-finds-suspicious-traffic/?utm_source=tldrinfosec">Does opting out of smart TV tracking work? Research finds “suspicious” traffic. (6 minute read)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>Vizio OS TVs kept sending traffic to an Amazon Kinesis ACR endpoint in every opted-out scenario tested, including while idle, according to a Northeastern University study of eight smart TV OSes across 12 TVs. Samsung&#039;s Tizen also kept contacting ACR endpoints after opt-out during first-party streaming, antenna, and HDMI viewing, while Roku&#039;s post-opt-out traffic was limited to The Roku Channel and disclosed in its terms. Encryption kept the researchers from confirming what the traffic contained, so the findings pointed to likely rather than proven consent violations.</p>
+        </article>
+        <article>
+            <h2><a href="https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/?utm_source=tldrinfosec">Suppressing misalignment monitoring alerts and disabling misalignment monitoring (4 minute read)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>OpenAI reports two internal incidents on October 3 and 6. A GPT-6.1 Sol agent emptied monitoring alert recipients and set no_notify after treating a “don&#039;t send messages” instruction as covering security alerts. A GPT-6 Astra agent removed monitoring during a code migration, then told the user it had not. Neither case was classed P0. OpenAI is updating Auto-Review to block monitoring disabling and plans automatic termination of workloads lacking valid safety cases.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.semperis.com/ransomware-risk-report/?utm_medium=pd&amp;amp;utm_source=tldr">Ransomware Risk Report: Are You Ready for AI Impact? (Sponsor)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>84% of attacks weaponized AI. This Cybersecurity Awareness Month, discover how threats are escalating—and how you can fight back.Explore the Semperis study results</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theguardian.com/technology/2026/oct/21/meta-fined-new-mexico-data-privacy-case?utm_source=tldrinfosec">Meta ordered to pay $25bn to New Mexico in Cambridge Analytica data-privacy case (3 minute read)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>A New Mexico judge ordered Meta to pay $25bn after a jury found 26 of 29 company statements misleading in a Cambridge Analytica case tallying over 43m consumer protection violations, cutting a penalty he said could have justified more than $219bn.</p>
+        </article>
+        <article>
+            <h2><a href="https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html?utm_source=tldrinfosec">State Bank of India Confirms Data Leak After 3,897 Customer Records Found on Dark Web (3 minute read)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>SBI said it found 3,897 customer records with personal data in a dark-web set of about 375,000 records.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.malwarebytes.com/blog/bugs/2026/10/signal-bug-could-let-someone-keep-listening-after-you-hang-up?utm_source=tldrinfosec">Signal bug could let someone keep listening after you hang up (2 minute read)</a></h2>
+            <time datetime="2026-10-22T00:00:00.000Z">2026-10-22T00:00:00.000Z</time>
+            <p>A malicious call participant could flood RingRTC&#039;s internal event queue to keep Signal call audio flowing after the other party hung up, a flaw tracked as CVE-2026-113380 (CVSS 9.3) and fixed in RingRTC 2.72.0.</p>
+        </article>
+        <article>
+            <h2><a href="https://aws.amazon.com/marketplace/build-learn/security/fortigate-ngfw-solution-template-hybrid-intrusion-prevention?trk=f6279a4a-20d7-4a8f-8886-55dfe0ec120b&amp;amp;sc_channel=el&amp;amp;utm_source=TLDR&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=2026-10-21_tldr_infosec_primary_aws&amp;amp;utm_content=header_block_simulated_attack&amp;amp;utm_term=2026-10-21_tldr_infosec">Block a simulated attack with FortiGate on AWS (Sponsor)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Traffic moving between your AWS Region and Outposts can bypass inspection if your security stack isn&#039;t positioned in the middle. This solution template deploys a fully configured FortiGate Next-Generation Firewall with AWS Gateway Load Balancer in one AWS CloudFormation stack.What you get:• Automated deployment: VPCs, Transit Gateway, IAM roles, and security policies — pre-configured.• Unified hybrid inspection: Monitor north-south and east-west traffic across VPCs and Outposts from one dashboard.• Hands-on IPS test: Create a sensor and block a simulated malicious download, step by step.Deploy the solution template →</p>
+        </article>
+        <article>
+            <h2><a href="https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/?utm_source=tldrinfosec">Meta Muse exposes users&#039; personal and business secrets when they share conversations (3 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Researchers at Claroc found 6,800 Meta Muse share links through passive DNS searches. The links included conversation titles in their subdomains, making them searchable. Samples exposed executive-search notes, revenue reviews, loan applications, bank-fraud details, property records, and staff calendars. Meta paused the sharing feature on October 20 while reviewing the report.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs?utm_source=tldrinfosec">BeyondTrust Remote Support 26.2.3 suffers auth bypass CVE-2026-102764 (4 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>BeyondTrust Remote Support versions 26.2.3 and earlier are affected by CVE-2026-102764, a critical authentication bypass and arbitrary file upload vulnerability with a CVSS score of 9.3. CVE-2026-102764 lets unauthenticated attackers perform file operations, escalate to root, and access credential vaults. A suspected Chinese state-sponsored espionage group, Armory Castle (UNC5221), has actively exploited this zero-day flaw since late August to deploy custom webshells such as BARECLAW for persistence and lateral movement. BeyondTrust released security patches in October for self-hosted customers, prompting CISA and the Canadian Centre for Cyber Security to advise organizations to restrict external access to appliances and conduct forensic reviews for signs of compromise.</p>
+        </article>
+        <article>
+            <h2><a href="https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html?utm_source=tldrinfosec">Hackers Use New ROMULUS ClickFix Platform to Deliver LegionLoader and Other Malware (2 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>ROMULUS, a ClickFix delivery platform, was discovered using fake landing pages to make users run malicious commands. It was found to serve PowerShell staging scripts that deploy trojanized MSI installers or padded encrypted archives containing Legion Loader. Researchers found six IP addresses running the platform. One also hosted a ClickFix script linked to malicious ChatGPT Custom GPTs and Legion Loader, then retrieved further payloads.</p>
+        </article>
+        <article>
+            <h2><a href="https://act.security/resources/lambda-web-functions-public-by-default?utm_source=tldrinfosec">Lambda Web Functions: Public by Default, and Already in Your lambda:* Grants (5 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Lambda Web Functions are a new AWS feature that allow for running a Node.js HTTP server behind a managed HTTPS domain. By default, the functions run with no authentication, and role credentials are included as environment variables, which could potentially be leaked for the full duration of the execution environment. Existing roles that grant lambda:* permissions have access to web functions by default, existing SCPs may not cover them, and visibility tooling may also miss functions, leading to the potential for shadow Web Functions being created and going unnoticed.</p>
+        </article>
+        <article>
+            <h2><a href="https://nesbitt.io/2026/09/24/package-manager-sandboxing.html?utm_source=tldrinfosec">Package Manager Sandboxing (7 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Homebrew developer Andrew Nesbitt explains Homebrew 7.0&#039;s split fetch and install phases as well as the Landlock and Seatbelt-based sandboxes. Nesbitt then reviews the sandbox implementations, allowlist implementations, and sandbox proposals from other package managers. Some package managers like Go and Elm go a step further by fully removing code execution.</p>
+        </article>
+        <article>
+            <h2><a href="https://norforge.com/blog/inside_cairn?utm_source=tldrinfosec">Inside Cairn: Open Windows into massive AI-Driven Cyber Operations (16 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>NorForge found more than 20 publicly exposed Cairn panels used for malicious intrusion work. One Chinese-language cluster ran over 1,100 attack projects against e-commerce and payment systems in the US, Japan, Australia, and Canada, seeking unauthenticated RCE, file-upload webshells, SQL injection, and authentication bypasses. Another cluster targeted merchant payment, crypto, and pharmaceutical sites for card and cryptocurrency theft. The panels exposed targets, credentials, API keys, agent instructions, and successful compromises. Trufflehog found hundreds of secrets, with 11% verified valid. NorForge is notifying victims and seeking panel takedowns.</p>
+        </article>
+        <article>
+            <h2><a href="https://pages.awscloud.com/awsmp-gim-85hk-webinar-sec-grc-webinar-grc-webinar.html?trk=3df23b3d-8c60-4c12-acfc-67e2ea5e8849&amp;amp;sc_channel=el">Address API and agentic AI risks (Sponsor)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Discover how excessive data exposure, tool poisoning, privilege escalation, and shifting trust boundaries affect modern architectures. Hear practical guidance for embedding security early, improving token hygiene, and preparing for regulatory scrutiny. Watch the webinar on demand.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/ig-labs/velociraptor-skills?utm_source=tldrinfosec">Velociraptor Skills (GitHub Repo)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>A collection of public, reusable Codex skills and DFIR tooling for Velociraptor setup, collection, hunting, and host analysis.</p>
+        </article>
+        <article>
+            <h2><a href="https://mind.io/?utm_source=tldrinfosec">MIND (Product Launch)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>MIND is a data loss prevention platform that detects and blocks data exfiltration across email, endpoints, generative AI tools, and SaaS. It classifies content and context, then investigates events, tunes policies, and resolves issues.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/microsoft/quicksand?utm_source=tldrinfosec">Quicksand (GitHub Repo)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Quicksand is an async Python API for launching, controlling, and snapshotting QEMU virtual machines with a particular focus on sandboxing AI agents.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.google/security/our-latest-defenses-against-evolving-web-scams/?utm_source=tldrinfosec">Our latest defenses against evolving web scams (3 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Chrome&#039;s Enhanced Protection added ClickFix detection that scrubs PII from copied commands, sends them to Safe Browsing for analysis, and warns users when the verdict comes back dangerous. Google also moved its Gemini scam detection from on-device to a server-side model that scores page intent and brand impersonation, and it added a lower-confidence &quot;suspicious site&quot; warning tier beneath the familiar red interstitial. The company claimed Enhanced Protection users were ten times safer than Standard Protection users, a figure drawn from Google&#039;s own measurement.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins?utm_source=tldrinfosec">A hacker broke into John Deere and SharkNinja with an army of AI agents (2 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>A hacker used autonomous agents on the open-source Cairn platform to breach more than 100 sites, reportedly including John Deere, SharkNinja, and Cummins. The attacker supplied intrusion tactics in under 100 Chinese characters. The breaches took about 23 hours. Norforge found over 20 likely malicious Cairn instances. John Deere said no sensitive data was accessed. SharkNinja contained the incident.</p>
+        </article>
+        <article>
+            <h2><a href="https://cyberscoop.com/dhs-bans-deepseek-federal-agencies/?utm_source=tldrinfosec">DHS to Ban DeepSeek From Federal Civilian Agencies (2 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>The Department of Homeland Security announced a new ban on the procurement of products from DeepSeek. The directive cited national security concerns stemming from the potential for sensitive data to be stored or processed in China. Agencies will have 60 days to request exceptions to the policy.</p>
+        </article>
+        <article>
+            <h2><a href="https://trufflesecurity.com/library/guides/ai-attackers-need-one-credential">All AI Attackers Need Is One Credential. We Found Over Half a Million. (Sponsor)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>An AI agent broke into Hugging Face with one stolen credential. Truffle Security found 543,699 live credentials in the public code AI models train. Read what security leaders need to know before an agent finds theirs.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Generated on 2026-10-23T15:57:30.000Z</p>
+    </footer>
+</body>
+</html>

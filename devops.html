@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TLDR DEVOPS news articles for AI consumption">
+    <title>TLDR DEVOPS News Feed</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1em;
+        }
+        article:last-child {
+            border-bottom: none;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        time {
+            color: #666;
+            font-size: 0.9em;
+        }
+        p {
+            color: #444;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TLDR DEVOPS News Feed</h1>
+        <p>Latest 50 articles from <a href="https://tldr.tech/">TLDR</a></p>
+    </header>
+    <main>
+        <article>
+            <h2><a href="https://aws.amazon.com/ec2/nitro/?trk=221ff974-e04d-4fa3-a095-9a0b04c5ff02&amp;amp;sc_channel=el">Confidential Computing Built into EC2 Instances (Sponsor)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Every security review asks: what can the cloud provider access? The AWS Nitro System was built with no operator access, and no code changes required:🚫 No operator access by design: No system or person can log in to Nitro hosts, read instance memory, or access customer data on encrypted EBS volumes.📋 Authenticated, audited APIs only: Even AWS&#039;s most privileged operators are limited to authorized, audited APIs, none of which can access customer data.⚡ Near bare-metal performance: The Nitro Hypervisor performs like bare metal for most workloads, so isolation doesn&#039;t cost throughput.Learn how the AWS Nitro System delivers confidential computing →</p>
+        </article>
+        <article>
+            <h2><a href="https://www.harness.io/blog/introducing-ai-budgets?utm_source=tldrdevops">Introducing Harness AI Budgets (5 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Harness AI Budgets turns AI cost policies into enforced weekly spending limits scoped to a team, developer, model, or project. Access pauses at 100% until the weekly reset or an approved increase. In Harness&#039; internal test, weekly AI spend per developer fell about 37%.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.digitalocean.com/blog/critical-php-rce-vulnerabilities-patch-now?utm_source=tldrdevops">Critical PHP RCE Vulnerabilities: Patch Now (CVE-2026-109618, CVE-2026-109619) (5 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Two critical remote code execution vulnerabilities in PHP, tracked as CVE-2026-109618 and CVE-2026-109619, were publicly disclosed on October 21. Proof-of-concept exploit code is available, and the flaws affect every PHP version from PHP 5 onward. DigitalOcean is automatically patching WordPress instances on its Cloudways managed product, but customers running PHP on Droplets or other unmanaged services must update to PHP 8.2.35, 8.3.36, 8.4.27, or 8.5.12 immediately. There are no patches for PHP 8.1 or earlier.</p>
+        </article>
+        <article>
+            <h2><a href="https://grafana.com/blog/observabilitycon-2026-announcements/?utm_source=tldrdevops">ObservabilityCON 2026: A guide to all the announcements from Grafana Labs (10 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Grafana Labs announced Grafana Cloud updates covering AI operations, cost controls, and full-stack context. Assistant Watchers reached general availability, Adaptive Telemetry customers report cutting spend 30% to 50% on average, and the Grafana Marketplace launched with more than 30 plugins.</p>
+        </article>
+        <article>
+            <h2><a href="https://cloudnativenow.com/contributed-content/scaling-gitops-with-release-promotion/?utm_source=tldrdevops">Scaling GitOps With Release Promotion (4 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Jesse Suen of Akuity describes a fleet of over 200 clusters where every merge synced everywhere with no gate. He argues sync tools do not handle release tracking or promotion decisions and recommends staged promotion that rolls out in waves and halts on failed checks.</p>
+        </article>
+        <article>
+            <h2><a href="https://planetscale.com/blog/i-dont-like-delete-cascade?utm_source=tldrdevops">I Don&#039;t Trust ON DELETE CASCADE (6 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Large cascading deletes can turn a routine schema migration into an outage by holding locks while new queries queue behind the waiting migration. Soft deletes followed by bounded background cleanup keep transactions smaller, with additional pitfalls around unindexed foreign keys and logical replication.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.infoq.com/presentations/dora-ai-adoption-engineering-performance/?utm_source=tldrdevops">Presentation: AI is an Amplifier: Scale High Performance, Not Dysfunction (33 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Nathen Harvey of Google Cloud&#039;s DORA team presents 2025 survey findings from nearly 5,000 respondents, about 90% of whom use AI professionally. He argues AI amplifies existing organizational strengths and dysfunctions, and introduces the DORA AI Capabilities Model.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.bluehost.com/ai-gateway?utm_source=influencer&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=jev&amp;amp;utm_content=TLDR_Newsletter&amp;amp;channelid=P99C46097236S651N0B3003A151D115E0000V108">JEV helps your agent decide what to do next. Bluehost gives it somewhere to run 24/7. (Sponsor)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Your agent shouldn&#039;t depend on your laptop staying open. Run it on an always-on VPS with a 99.99% uptime guarantee, so it keeps working after you log offGet started</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/luongnv89/claude-howto?utm_source=tldrdevops">Claude-How-To (GitHub Repo)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>This MIT-licensed guide teaches users how to use Claude Code through 10 modules covering slash commands, hooks, skills, and MCP servers. Users can copy templates directly into projects or follow a self-assessment quiz to get a personalized roadmap. The current version, v2.1.302, is compatible with Claude Code 2.1+ and includes copy-paste templates for models including Claude Opus 5.5 and Claude Sonnet 5.5.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview/?utm_source=tldrdevops">GitHub Actions Workflow Lockfiles in Public Preview (2 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>GitHub Actions workflow lockfiles pin actions and their transitive dependencies to reviewed commits while preserving readable tags in workflow files. The public preview includes a GitHub CLI extension to generate lockfiles, Dependabot integration to update them, and policies that require workflows to use them.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.cloudflare.com/emudhra-certificate-compromise/?utm_source=tldrdevops">8 eMudhra certificates are compromised. Here&#039;s what you need to know (4 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Private keys for eight widely trusted eMudhra intermediate certificates were compromised on October 19, allowing attackers to forge certificates for any domain. Cloudflare has patched its CDN, Zero Trust, and Tunnel products. Customers must update the Cloudflare One Client and 1.1.1.1 app to specific versions to remain protected.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.cncf.io/blog/2026/10/21/before-you-evaluate-an-ai-sre-give-your-existing-agent-context/?utm_source=tldrdevops">Before you evaluate an AI SRE, give your existing agent context (6 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Engineers at Radar tested whether adding context to coding agents improves Kubernetes diagnostics. When running 50 fault scenarios, agents with context reached a correct diagnosis within two minutes on 86% of faults, compared to 60% for agents using a standard shell. Accuracy improved only slightly with context, but the time savings were significant. The test used Claude Code and Microsoft&#039;s SREGym benchmark on a live Amazon EKS cluster.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.infoq.com/news/2026/10/github-runner-controller-0-15/?utm_source=tldrdevops">GitHub Actions Runner Controller 0.15.0 Targets Reliability at Scale (3 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>GitHub released Actions Runner Controller 0.15.0, which sends smaller patch requests and moves runner status aggregation into metrics to reduce Kubernetes API updates.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.pulumi.com/blog/self-hosted-ai-infrastructure-pulumi-aicr/?utm_source=tldrdevops">AI infrastructure on tap with the Pulumi AICR provider (3 minute read)</a></h2>
+            <time datetime="2026-10-23T00:00:00.000Z">2026-10-23T00:00:00.000Z</time>
+            <p>Pulumi has released the NVIDIA AI Cluster Runtime (AICR) provider to help developers deploy self-hosted AI infrastructure.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.atlassian.com/gartner/magic-quadrant-devsecops?utm_source=newsletter-email&amp;amp;utm_medium=email&amp;amp;utm_campaign=P%3Ajira-service-management*O%3Agdc*C%3Adl*H%3Afy27q2*I%3Atldr-devops-primary*Y%3Aitsm*E%3Acloud*&amp;amp;utm_content=header_gartners_devsecops_magic&amp;amp;utm_term=2026-10-21_tldr_devops&amp;amp;utm_sfdc-campaign_id=701QB00000ky3JzYAI">Gartner&#039;s DevSecOps Magic Quadrant Rates Atlassian as the Top Vendor in “Ability to Execute” (Sponsor)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Atlassian has been named a Leader in the 2026 Gartner® Magic Quadrant™ for DevSecOps Platforms for the fourth consecutive year.&gt;&gt; The global research positioned Atlassian&#039;s ability to execute as top amongst vendors reviewed – including Microsoft, GitLab, and Harness. &gt;&gt; Atlassian was also ranked among the top organizations for completeness of vision.Read the DevSecOps Magic Quadrant to get the full picture why Atlassian has emerged as a consistent leader in DevSecOps – and how your team can use Atlassian tools to deliver secure execution across every stage of the development lifecycle. Get your free copy</p>
+        </article>
+        <article>
+            <h2><a href="https://openai.com/index/stack-overflow-chatgpt-plugin?utm_source=tldrdevops">Stack Overflow for Agents triples signups with ChatGPT plugin (3 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Stack Overflow built Stack Overflow for Agents in a few weeks with two engineers using Codex. A ChatGPT plugin reportedly tripled overnight registrations, and Codex cut enterprise connector build time from 3 to 6 weeks to 4 days.</p>
+        </article>
+        <article>
+            <h2><a href="https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/?utm_source=tldrdevops">Introducing Amazon ECS Gateway: A fully-managed ingress solution for ECS services (4 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Amazon ECS Gateway is a resource that simplifies ingress networking for containerized workloads by automatically provisioning load balancers and certificates. It allows up to 25 services to share a single Application Load Balancer to optimize infrastructure costs. Amazon ECS Gateway is available now in all commercial AWS Regions at no additional charge, though users pay for the underlying resources provisioned in their accounts.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.cloudflare.com/typescript-rust-port/?utm_source=tldrdevops">Introducing tsrs: a Port of TypeScript to Rust (5 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Cloudflare and VoidZero are collaborating on tsrs, a Rust port of the TypeScript compiler. Early benchmarks show tsrs is up to 8x faster and uses roughly 70% less memory than TypeScript 7.0. The team is working with the TypeScript team to ensure the port remains compatible with the official language design. Rust allows the compiler to run in WebAssembly, which enables development environments to run in browsers or on embedded devices.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.anthropic.com/research/redesigning-source-control?utm_source=tldrdevops">Redesigning Source Control at Anthropic (15 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Anthropic replaced Git for its monorepo with Scion, a centralized source control system designed for tens of millions of daily CI checkouts. Content-addressed storage, server-side repository operations, and tiered caches reduced its source-control CPU and memory footprint 200× compared with its previous Git mirroring infrastructure.</p>
+        </article>
+        <article>
+            <h2><a href="https://thenewstack.io/ai-agents-kubernetes-control/?utm_source=tldrdevops">AI agents vs. Kubernetes: where each belongs in the control loop (6 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Kubernetes operators suit deterministic reconciliation, while AI agents suit goals with unclear paths, according to a CNCF-sponsored piece. Use an observe, diagnose, propose, approve, reconcile, and verify loop, with autonomy phased from read-only investigation to approved low-risk changes.</p>
+        </article>
+        <article>
+            <h2><a href="https://internals-for-interns.com/posts/go-simd/?utm_source=tldrdevops">SIMD and Go (20 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Go&#039;s experimental SIMD packages expose vector instructions that process multiple values in one operation without handwritten assembly. Examples cover vector registers, loads, arithmetic, and compiler behavior using Go 1.27&#039;s experimental SIMD support on amd64.</p>
+        </article>
+        <article>
+            <h2><a href="https://incident.io/blog/building-investigations-what-it-takes-to-build-an-ai-sre?utm_source=tldr&amp;amp;utm_medium=paid-email&amp;amp;utm_campaign=FY26-Q4-AI-Reliability&amp;amp;utm_content=devops">What it actually takes to build an AI SRE (Sponsor)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Two years, hundreds of prompts, one adversarial agent. Here&#039;s what it really took us to build incident.io Investigations, and why the prototype is a trap. Read More →</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/headroomlabs-ai/headroom?utm_source=tldrdevops">Headroom (GitHub Repo)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Headroom compresses tool outputs, logs, files, and RAG chunks before they reach the LLM. Benchmarks show the compression results in 20% fewer tokens for coding agents and 60-95% fewer tokens for JSON. The tool runs locally to ensure no prompt or file content is sent externally.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/vllm-project/vllm?utm_source=tldrdevops">vLLM (GitHub Repo)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>vLLM is a library for LLM inference and serving that originated in the Sky Computing Lab at UC Berkeley. The open-source project now has over 2,000 contributors and supports more than 200 model architectures on Hugging Face.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.cloudflare.com/obsessive-inference-optimization/?utm_source=tldrdevops">Cutting Our Inference Bill by 68% Through Optimization (15 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Cloudflare reduced its AI code reviewer&#039;s average cost from $2.43 to $0.77 through shared prompt-cache prefixes, fewer redundant tool calls, and model and reasoning-effort changes. Median review time fell from 4 minutes 9 seconds to 1 minute 32 seconds, while quality checks exposed trade-offs where cheaper configurations missed important findings.</p>
+        </article>
+        <article>
+            <h2><a href="https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/?utm_source=tldrdevops">Inside Prometheus: Meta&#039;s Journey to a Gigawatt-Scale Supercluster (13 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Meta is building Prometheus, a gigawatt-scale supercluster in New Albany, Ohio, that will eventually comprise roughly 1 million GPUs. The first phase of the project has already trained the company&#039;s Muse foundational models. Meta achieved over 85% goodput for pre-training runs and reduced interruption rates by 99% from their peak. The cluster currently deploys NVIDIA GB200 and GB300 platforms, with plans to integrate the upcoming Vera Rubin NVL72 next.</p>
+        </article>
+        <article>
+            <h2><a href="https://advertise.tldr.tech/?utm_source=tldrdevops&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=quicklinks10212026&amp;amp;sp=2iCAeeoSWwncwmXhC7TTBMVM">Reach 8 million tech professionals reading TLDR (Sponsor)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Ads get ignored on social media but not in TLDR! Reach DevOps and platform engineers where they actually pay attention. Learn more about sponsorship opportunities.</p>
+        </article>
+        <article>
+            <h2><a href="https://openai.com/index/itau-generative-ai?utm_source=tldrdevops">How Itaú is building generative AI for its entire customer base (7 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Itaú is applying its AI-first strategy using OpenAI models, including the ia.i assistant that reached about 300,000 customers in its first phase.</p>
+        </article>
+        <article>
+            <h2><a href="https://cloud.google.com/blog/products/identity-security/wiz-sensor-for-gke-turnkey-threat-detection-for-kubernetes/?utm_source=tldrdevops">Announcing Wiz Runtime Sensor add-on for GKE: Turnkey threat detection for Kubernetes (5 minute read)</a></h2>
+            <time datetime="2026-10-21T00:00:00.000Z">2026-10-21T00:00:00.000Z</time>
+            <p>Google Cloud and Wiz released the Wiz Runtime Sensor add-on for GKE in preview.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.atlassian.com/forrester/wave-coversational-ai-employee-services?utm_source=newsletter-email&amp;amp;utm_medium=email&amp;amp;utm_campaign=P%3Ajira-service-management*O%3Agdc*C%3Adl*H%3Afy27q2*I%3Atldr-devops-primary*Y%3Aitsm*E%3Acloud*&amp;amp;utm_content=header_why_forrester_just&amp;amp;utm_term=2026-10-19_tldr_devops&amp;amp;utm_sfdc-campaign_id=701QB00000nStVJYA0">Learn Why Forrester Just Named Atlassian a Leader in Conversational AI Platforms for Employee Services (Sponsor)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>Atlassian was recognized as a Leader in The Forrester Wave™: Conversational AI Platforms for Employee Services, Q3 2026, with their “strength of strategy” and “strength of offering” ranking them as outliers in the field. Here&#039;s some of what Forrester had to say:Strategy: Atlassian “is prioritizing connected user context across tools, proactive employee support, and embedding Rovo where people work.”Capabilities: “Atlassian stands out for its context capabilities and ability to embed Rovo into key collaborative surfaces.”Forrester&#039;s take: “Atlassian&#039;s agent is ideal for existing customers and those that want to automate more service experiences and experiment with cross-vendor agents.”Get the report.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/?utm_source=tldrdevops">Cloudflare and OpenAI: making AI discovery better for everyone (5 minute read)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>A research pilot between Cloudflare and OpenAI has enabled the discovery and indexing of hundreds of millions of new web pages. The program used signals from roughly 1% of Cloudflare&#039;s network to help ChatGPT find content that was previously unknown. These signals identify useful pages and filter out nonexistent or duplicated content, which reduces unnecessary crawling load for site owners. Cloudflare states the metadata is used for search discovery rather than training AI models.</p>
+        </article>
+        <article>
+            <h2><a href="https://newrelic.com/blog/news/anthropic-otel-ai-observability?utm_source=tldrdevops">Claude Platform Tracing in New Relic (4 minute read)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>The Claude Platform now exports OpenTelemetry traces natively from Claude Managed Agents, the Messages API, and the Claude SDKs in public beta. New Relic AI Monitoring reads these traces to link model performance with application data in a single view. Users can add New Relic as a destination in the Claude Console to start receiving spans within about a minute without code changes.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.datadoghq.com/blog/ai/introducing-scout-sre-specialized-model-bits-ai/?utm_source=tldrdevops">Introducing Scout 1.0: A new SRE model powering Bits AI with frontier performance at a fraction of the cost (4 minute read)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>Datadog&#039;s Scout 1.0 is an AI model specialized for investigating production issues that powers its Bits AI assistant. The model matches the performance of general-purpose frontier models like GPT-6.1 Sol and Claude Opus 5.5 at three to eight times lower estimated inference cost. Datadog trained Scout using reinforcement learning on simulations built from historical incidents.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.datadoghq.com/blog/how-datadog-defines-service-criticality-at-scale/?utm_source=tldrdevops">How Datadog Defines Service Criticality at Scale (8 minute read)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>An LLM analyzed several hundred SEV-1 and SEV-2 postmortems for about USD 32 to derive four criticality signals. Services get high, low, or unknown ratings with confidence, owner overrides, and the tiers inform deployment and auto-merge decisions.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.enterprisedb.com/blog/finding-and-fixing-silent-throughput-ceiling-postgresql?utm_source=tldrdevops">Finding (and Fixing) a Silent Throughput Ceiling in PostgreSQL (6 minute read)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>PostgreSQL throughput can stall under heavy concurrent inserts even when CPU and storage have spare capacity, as writers queue behind relation extension locks. In a HammerDB benchmark, distributing writes across hash partitions reduced contention and increased throughput 7.2× on the same hardware.</p>
+        </article>
+        <article>
+            <h2><a href="https://platformengineering.org/blog/agent-first-idp-how-big-tech-and-the-clouds-are-preparing-platforms-for-agents?utm_source=tldrdevops">Agent-first IDP: how big tech and the clouds are preparing platforms for agents (22 minute read)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>This guide outlines how to evolve an internal developer platform into an Agentic Engineering Platform (AEP) suitable for AI agents. Real-world examples from Block, Uber, Spotify, and public clouds illustrate architectural decisions like managed entry points, agent identity, and trustworthy state. The playbook describes nine practices across four maturity levels, ranging from demand discovery and machine-readable contracts to policy enforcement and domain-specific agents.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.finout.io/finout-agents-demo?utm_source=tldr-newsletter-oct&amp;amp;utm_medium=email&amp;amp;utm_campaign=TLDR&amp;amp;utm_content=DevOps-secondary">Finout&#039;s new AI agents cut cloud and AI costs without burning engineering hours (Sponsor)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>Trawling through dashboards and Slack threads to find wasted spend = every engineer&#039;s nightmare. Finout&#039;s AI agents (beta) do that work daily across your cloud and AI spend, then hand each owner a ready case with savings and evidence. Lower bill, higher engineering efficiency. Watch the walkthrough or book a demo.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/HKUDS/CLI-Anything?utm_source=tldrdevops">CLI-Anything (GitHub Repo)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>CLI-Anything is a tool that converts software with a codebase into command-line interfaces for AI agents. The project currently supports 18 applications, including GIMP, Blender, and LibreOffice, with 2,461 passing tests. Users can install the CLI-Hub package manager to browse and deploy these community-built CLIs.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.cloudflare.com/deploy-with-void/?utm_source=tldrdevops">Deploy with Void (5 minute read)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>VoidZero has open-sourced Void, a toolchain that extends Vite to handle full-stack application development and deployment. The package includes an SDK, a CLI, and a Platform for teams to self-host deployment environments within their own Cloudflare accounts. It automatically provisions resources like databases and queues during deployment.</p>
+        </article>
+        <article>
+            <h2><a href="https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/?utm_source=tldrdevops">Azure Maia 300 Architecture Deep Dive (8 minute read)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>Microsoft&#039;s third-generation AI accelerator uses TSMC N2P with 288 GB HBM4 at 18 TB/s. Racks hold 96 accelerators at 167 kW, scaling to 12,288-chip superpods, with up to 7x token throughput.</p>
+        </article>
+        <article>
+            <h2><a href="https://spacelift.io/blog/atlantis-at-scale?utm_source=tldrdevops">Atlantis at Scale (13 minute read)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>Details running Atlantis v0.47.1 as a single-replica StatefulSet with Redis locking and S3 plan storage. Limits include an alpha drift API with no scheduler and no cross-project dependency graph. Spacelift positions itself as the alternative.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.amazon.com/dp/1966280297?maas=maas_adg_DB832E1F4D4864D58F129B0BB23BC5ED_afap_abs&amp;amp;ref_=aa_maas&amp;amp;tag=maas">Signals &amp; Levers: Systems Thinking Tools to Unblock Software Delivery (Sponsor)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>Metrics look green, but releases keep slipping. Elisabeth Hendrickson and Joel Tosi show how to separate signal from noise, map why fixes backfire, and find levers that actually unblock delivery.Get the book</p>
+        </article>
+        <article>
+            <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/ecs-service-metrics/?utm_source=tldrdevops">Amazon ECS Adds LiveTaskCount Service Metric (1 minute read)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>A free metric counts tasks that are activating, running, or deactivating, without Container Insights.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models/?utm_source=tldrdevops">Powering European Scientific Discovery with Advanced AI Compute (1 minute read)</a></h2>
+            <time datetime="2026-10-19T00:00:00.000Z">2026-10-19T00:00:00.000Z</time>
+            <p>Google DeepMind and Google Cloud will give up to 200 European researchers access to AlphaFold 3, WeatherNext, and other models, plus USD 3 million in compute credits.</p>
+        </article>
+        <article>
+            <h2><a href="https://spacelift.io/blog/spacelift-cursor-origin-integration?utm_source=tldrdevops">Spacelift Integrates with Cursor Origin (3 minute read)</a></h2>
+            <time datetime="2026-10-16T00:00:00.000Z">2026-10-16T00:00:00.000Z</time>
+            <p>Agent-driven infrastructure changes now flow through Spacelift using a registered Origin app with a signing key, so the same OPA policies and approvals apply. A cited report says 76% would apply AI-generated Terraform with little review.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.cloudflare.com/transformers-on-logpush/?utm_source=tldrdevops">Cloudflare Logpush Transformers (7 minute read)</a></h2>
+            <time datetime="2026-10-16T00:00:00.000Z">2026-10-16T00:00:00.000Z</time>
+            <p>Cloudflare Transformers use SQL to filter, redact, and reshape logs before export. The feature is now generally available on all plans.</p>
+        </article>
+        <article>
+            <h2><a href="https://aws.amazon.com/blogs/aws/amazon-s3-vercel-marketplace-v0/?utm_source=tldrdevops">Amazon S3 is now available on the Vercel Marketplace and v0 by Vercel (4 minute read)</a></h2>
+            <time datetime="2026-10-16T00:00:00.000Z">2026-10-16T00:00:00.000Z</time>
+            <p>Developers on Vercel can now provision Amazon S3 storage, including S3 Tables and S3 Vectors, directly from the Vercel Marketplace and v0. The integration handles connection configuration automatically and supports three workloads: everyday storage, analytics, and AI. Users pay standard Amazon S3 pricing for the resources they use, and new AWS accounts created through Vercel receive $100 in credits valid for six months.</p>
+        </article>
+        <article>
+            <h2><a href="https://planetscale.com/blog/neki-volatile-expressions?utm_source=tldrdevops">Sequences and Other Volatiles in Neki (12 minute read)</a></h2>
+            <time datetime="2026-10-16T00:00:00.000Z">2026-10-16T00:00:00.000Z</time>
+            <p>Distributing PostgreSQL queries across shards gets complicated when functions depend on time or generate sequence values. Neki coordinates sequence allocation through its router and preserves how often expressions execute, preventing query optimizations from producing duplicate IDs or changing SQL behavior.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.cloudflare.com/hyperdrive-mysql/?utm_source=tldrdevops">Inside Hyperdrive: How We Solved a Rare MySQL Caching Bug (10 minute read)</a></h2>
+            <time datetime="2026-10-16T00:00:00.000Z">2026-10-16T00:00:00.000Z</time>
+            <p>A rare Hyperdrive bug returned empty MySQL results when two components shared a cache but encoded responses using different protocol capabilities. Cloudflare traced the failures to an assumption inherited from its Postgres implementation and fixed them by storing responses in a canonical format before translating them for each client.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.dragonflydb.io/?utm_source=tldr&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=TLDRDevOpsSecondary10162026&amp;amp;sp=8CS3_29His6P1vbVCjJrF78K">What happens when you rebuild Redis for multi-core hardware? (Sponsor)</a></h2>
+            <time datetime="2026-10-16T00:00:00.000Z">2026-10-16T00:00:00.000Z</time>
+            <p>Redis runs one core per process. Your server has 64. Dragonfly is a multi-threaded, Redis/Valkey-compatible data store built by an ex-AWS ElastiCache engineer. It hits 6M ops/sec on a single node, no cluster needed. Instacart used it to cut latency in half on 70% fewer nodes. Learn more</p>
+        </article>
+    </main>
+    <footer>
+        <p>Generated on 2026-10-23T15:57:27.894Z</p>
+    </footer>
+</body>
+</html>
