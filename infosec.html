@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TLDR INFOSEC news articles for AI consumption">
+    <title>TLDR INFOSEC News Feed</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1em;
+        }
+        article:last-child {
+            border-bottom: none;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        time {
+            color: #666;
+            font-size: 0.9em;
+        }
+        p {
+            color: #444;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TLDR INFOSEC News Feed</h1>
+        <p>Latest 50 articles from <a href="https://tldr.tech/">TLDR</a></p>
+    </header>
+    <main>
+        <article>
+            <h2><a href="https://xbow.com/webinars/six-days-to-chrome-full-chain-exploit?utm_source=tldr&amp;amp;utm_medium=syndication&amp;amp;utm_campaign=tldr_demand_webinar_global_all_wbnchrome&amp;amp;utm_content=wbnchrome_infosec_od_hl_v1&amp;amp;utm_term=titles_sec&amp;amp;utm_id=primary10302026&amp;amp;sfcid=701Pe00001eIg4TIAS">We Built A Chrome Full-Chain Exploit In Six Days. Watch How (Sponsor)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>A Chrome full chain used to take a team of four, 6 to 9 months. XBOW&#039;s AI agents did it in six days with about $40,000 of model time. Three vulnerabilities, two sandbox escapes, code running on the host. Google confirmed it and paid the first $250,000 full-chain award under its 2026 rules.In this on-demand session, researcher Brendan Dolan-Gavitt walks through both attempts, the human-led chain that lost to a bug collision and the agent-led one that won.Watch the full walkthrough on demand.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.securityweek.com/hhs-filing-puts-irhythm-data-breach-toll-at-8-2-million/?utm_source=tldrinfosec">HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million (2 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>In June, hackers accessed iRhythm&#039;s third-party-hosted business applications, demanded a ransom, and threatened to leak stolen data. HHS now lists 8,179,772 people as affected. Exposed data includes names, contact details, dates of birth, account and device identifiers, insurance numbers, and service dates. iRhythm says it has no evidence of identity theft and found no impact on medical devices, patient safety, manufacturing, or customer connections.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.reuters.com/legal/government/leak-website-releases-data-tens-thousands-dhs-employees-2026-10-28/?utm_source=tldrinfosec">Leak Website Releases Data on Thousands of U.S. Homeland Security Employees (2 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>Distributed Denial of Secrets released data belonging to over 40K DHS employees. The data was obtained from an Okta instance, though Okta has stated that they were not breached. The stolen data includes DHS employees&#039; names, phone numbers, and email addresses.</p>
+        </article>
+        <article>
+            <h2><a href="https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html?utm_source=tldrinfosec">Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat, and Other Distributions (2 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>Researchers from Anthropic uncovered a new use-after-free vulnerability in the Linux kernel that could lead to memory corruption, kernel memory reads, or system crashes. The vulnerability stems from a race condition in the TCP handshake and is fixed by ensuring all other CPUs finish reading the socket options before freeing them. Red Hat and other distros rate the vulnerability less severely because the race condition is complex to exploit.</p>
+        </article>
+        <article>
+            <h2><a href="https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/?utm_source=tldrinfosec">Google announces Gemini 4 Carbon, its latest frontier AI model that you can&#039;t use (3 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>Google announced Gemini 4 Carbon two weeks after Gemini 4 Argon. It targets vulnerability detection, validation, remediation, and secure code generation. Google says Carbon is twice as likely as Argon to produce vulnerability-free code and resisted all prompt-injection attempts in Grey Swan testing.</p>
+        </article>
+        <article>
+            <h2><a href="https://nebulock.io/blog/threat-hunting-for-malicious-ip-kvm-usage?utm_source=tldrinfosec">Threat Hunting for Malicious IP-KVM Usage (7 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>IP-KVM devices like PiKVM let remote operators drive a machine at the hardware layer with input indistinguishable from a local user, a tactic North Korean IT workers used to control laptop farms. Nebulock&#039;s hunt guide treated its sparse-peripheral and onboarding-timing heuristics as triage signals rather than attribution, since product strings and VID/PIDs can be spoofed. Threat hunters should search USB telemetry for known KVM vendors, then flag rare composite HID devices that also expose storage, networking, or video, and correlate hits with new-hire timing and identity anomalies before escalating to physical inspection.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.hacktron.ai/blog/hacking-gnu-savannah?utm_source=tldrinfosec">Securing Internet-Critical Software: How We Could Have Backdoored Bash (7 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>GNU Savannah&#039;s Savane forge passed a user&#039;s email address unescaped into a shell command during GPG key testing, so an RFC-valid address containing backtick-wrapped commands gave any registered user code execution on the backend. Hacktron researchers used that foothold to read database credentials, grant themselves superuser, and impersonate Bash maintainer Chet Ramey, which exposed an SSH key page that would have allowed pushes to upstream Bash, before an unpatched GameOver(lay) kernel bug gave them root and a key to a GNU backup server. The FSF fixed all 26 reported flaws, and forge operators should pass process arguments as arrays rather than shell strings, treat email local parts as untrusted input, and verify that LTS kernels actually receive backported fixes.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview/?utm_source=tldrinfosec">GitHub package firewall in public preview (2 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>GitHub launched a package firewall in public preview for GitHub Enterprise Cloud, including data-resident deployments. It sits between coding agents, CI/CD hosts, and upstream registries, inspecting npm metadata requests and package downloads. Administrators can set cooldown periods, check GitHub Advisory Database advisories, and block attestation downgrades. Blocked packages can receive exceptions through a request workflow. The preview is free - general availability will use metered billing.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/irraz/vulnerator-ai?utm_source=tldrinfosec">Vulnerator AI (GitHub Repo)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>Vulnerator AI runs a pentest as an OODA loop: Nous Research&#039;s Hermes agent picks the next tool and runs it on a Kali container through MCP, with nmap, nuclei, ffuf, sqlmap, and Prowler on hand. Unlike most agentic pentest frameworks, it drops the orchestration core, REST API, and UI. That leaves four containers, including a headless Playwright browser for web testing and an MCP front door that lets Claude Code or other clients start, steer, and stop runs. Mistral Large 4 on OpenRouter drives the loop by default and falls back to GLM-5.3 Flash, and local Ollama inference is documented as an option.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/cisco-ai-defense/project-quarry?utm_source=tldrinfosec">Project Quarry (GitHub Repo)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>Project Quarry is a Python framework for detecting threats and behavior patterns in agent conversations. Write rules over messages, tool calls, tool results, and event order. You can also call a configured model adapter from a rule when local checks are not enough.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials?utm_source=tldrinfosec">Attacker Impersonates AI Bots to Scan Orgs for Keys, Credentials (3 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>A scanner has impersonated 32 AI bots from OpenAI, Anthropic, Perplexity, Meta, and other providers since late September. It sends bursts of 50–190 requests, probes about 90 paths, and seeks passwords, API keys, cloud credentials, configuration files, and private SSH keys. On one October day, 48% of Cequence-protected organizations received the traffic. Most requests were blocked or failed.</p>
+        </article>
+        <article>
+            <h2><a href="https://therecord.media/japan-airlines-warns-of-breach-country-grapples-with-incidents?utm_source=tldrinfosec">Japan Airlines Warns of Data Breach as Country Grapples With Multiple Cyber Incidents (2 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>Japan Airlines is notifying 92K customers of a data breach exposing their data. The breach came through a third party that runs Japan Airlines&#039; reservation, ticketing, and check-in systems. For most customers, the attackers retrieved only names, reservation codes, and flight information. However, for about 2,000 customers, they also retrieved passport numbers, frequent flyer numbers, email addresses, and phone numbers.</p>
+        </article>
+        <article>
+            <h2><a href="https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/?utm_source=tldrinfosec">OpenAI Says It Will No Longer Train Its AI Models on the Live Internet, Citing ‘Significant Risks&#039; (2 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>After multiple instances of OpenAI models accidentally attacking unauthorized sites in tests, the frontier lab announced it will cut models&#039; internet access during training. Previously, OpenAI employees had said this would be infeasible. However, OpenAI announced that they will create a cached and indexed version of the public internet for model training.</p>
+        </article>
+        <article>
+            <h2><a href="https://fandf.co/4kbM0Tr">Closing the detection-to-enforcement gap: new access control benchmarks from IDC [Complimentary Report] (Sponsor)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>AI agents need the same access rules as human users. IDC research shows why unsanctioned AI identities require real-time, policy-driven enforcement. Portnox Cloud closes the detection-to-enforcement gap.</p>
+        </article>
+        <article>
+            <h2><a href="https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/?utm_source=tldrinfosec">South Korea&#039;s financial industry hit by fresh wave of cyberattacks (1 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>Daishin Securities has reported a breach that exposed names, email addresses, and mobile numbers for 38,490 customers.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theblock.co/news/defi/2026-10-29-polymarket-exploit-2-5-million-cancel-only-mode-432158?utm_source=tldrinfosec">Polymarket resumes trading after $2.65 million exploit, says third-party provider was compromised (2 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>Polymarket lost about $2.65 million within minutes after a third-party provider was compromised, forcing the exchange into cancel-only mode before it restored trading and pledged to fully reimburse affected traders.</p>
+        </article>
+        <article>
+            <h2><a href="https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html?utm_source=tldrinfosec">26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories (3 minute read)</a></h2>
+            <time datetime="2026-10-30T00:00:00.000Z">2026-10-30T00:00:00.000Z</time>
+            <p>A researcher scanned 7.25 million public Gitee repositories and found 26,400 working credentials, including 9,473 Alibaba Cloud AccessKey pairs, 3,805 YouTube API keys, 3,170 DeepSeek keys, and 1,348 OpenAI keys.</p>
+        </article>
+        <article>
+            <h2><a href="https://cloudonair.withgoogle.com/events/summit-amer-security-2026?utm_source=newsletter&amp;amp;utm_medium=email&amp;amp;utm_campaign=FY26-Q4-GLOBAL-GLO10000010-onlineeventsession-er-dgcsm-SS-NORAM-249572&amp;amp;utm_content=infosec-newsletter_header_google_cloud_security&amp;amp;utm_term=2026-10-29">Google Cloud Security Summit: Get the latest intel from Wiz, Mandiant, Redis, and more (Sponsor)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>If you&#039;re:&gt;&gt; fighting machine-speed attacks with manual triage,&gt;&gt; playing whack-a-mole with code reviews, or&gt;&gt; struggling to keep track of what agents are doing,then this is the summit for you.Join virtually on November 4th and learn how to defend with frontline intel, agents, and governance from Google Cloud, Mandiant, and Wiz.90 minutes of your time. 6 rapid fire sessions. Don&#039;t miss it.</p>
+        </article>
+        <article>
+            <h2><a href="https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/?utm_source=tldrinfosec">Code-execution flaw in UEFI firmware affects most servers on planet Earth (7 minute read)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>A 16-year-old buffer overflow in TianoCore EDK2&#039;s PXE Base Code driver (CVE-2026-97631, CVSS 9.5), the reference UEFI code behind most server firmware, allowed an attacker to send an oversized ICMP error during network boot and execute ring 0 code before Secure Boot and the TPM chain of trust loaded. An AMI pull request leaked the fix months ahead of a January coordinated disclosure, although exploitation required local network access and per-model address tuning. Defenders should request patched firmware from their UEFI vendors, disable PXE boot where feasible, and monitor network boot segments for anomalous ICMP traffic.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/?utm_source=tldrinfosec">Sony ISP Subsidiary Data Breach Exposes 2.5M Customer Records (2 minute read)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>Sony Network Communications disclosed that an unauthorized party accessed 2.5M records from its So-net member database, which supports its internet access service. The records included full names, phone numbers, email addresses, user IDs, dates of birth, gender, and Internet connection IDs. Additionally, it exposed 54K email addresses and account passwords from several email services.</p>
+        </article>
+        <article>
+            <h2><a href="https://cybersecuritynews.com/hackers-target-u-s-election-commission-forcing-online-system-shutdown/?utm_source=tldrinfosec">Hackers Target US Election Commission, Forcing Online System Shutdown Days Before Midterms (2 minute read)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>The Federal Election Commission (FEC) reported an outage in its filing system due to a cyberattack. The outage does not impact voting, just how campaigns report new funds flowing in. The FEC has not released details on whether any data was compromised.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.detectionengineering.net/p/what-are-security-logs-part-1?utm_source=tldrinfosec">What are Security Logs? (6 minute read)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>Logs are structured records of security events in formats such as JSON, CSV, Syslog, and Windows Event Logs. Security engineers need to apply transformations to event logs to normalize the various formats and fields, making the data uniform for correlation and composite detections.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.trendaisecurity.com/en-us/resources-insights/deep-research/not-only-artex-the-different-levels-ai-is-used-in-attacks-targeting-japan?utm_source=tldrinfosec">Not Only ARTEX: The Different Levels AI is Used in Attacks Targeting Japan (20 minute read)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>TrendAI examined three attacker infrastructures targeting Japan, documenting autonomous attacks, AI-assisted planning, and suspected AI-written tools. CyberStrikeAI coordinated 44 agents against at least 19 organizations. Another operator scanned 6,000 Japanese IPs and stole hundreds of thousands of records through default credentials. A third used recovered VPN credentials to enter corporate networks. Evidence came from exposed attacker files. Victim-side confirmation remains incomplete.</p>
+        </article>
+        <article>
+            <h2><a href="https://aws.amazon.com/blogs/architecture/how-anchorage-digital-and-turnkey-verify-code-with-aws-nitro-enclaves/?utm_source=tldrinfosec">How Anchorage Digital and Turnkey verify code with AWS Nitro Enclaves (12 minute read)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>Anchorage Digital and Turnkey ran the open-source VisualSign transaction parser inside AWS Nitro Enclaves, where each parsed result was signed with an ephemeral P-256 key and bundled with a Nitro attestation document whose PCRs wallets checked against reproducible builds. The design let wallets prove that unmodified, audited code decoded a transaction, removing blind trust in crypto transaction signing by providing verifiable attestation rather than relying solely on network identity or operator trust. The open-source awsnitroverifier Go library handles certificate-chain and PCR validation, which any organization can use to verify their services running in AWS Nitro.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/snort3/snort3?utm_source=tldrinfosec">Snort 3 (GitHub Repo)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>Snort Intrusion Prevention System 3 features improvements and new features resulting in enhanced performance, faster processing, improved scalability for your network, and a range of 200+ plugins so users can create a custom setup for their network.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/wangyu-ovo/CREBench?utm_source=tldrinfosec">CREBench (GitHub Repo)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>CREBench is a benchmark for evaluating LLM performance in cryptographic binary reverse engineering. CREBench evaluates models over algorithm identification, key (IV) extraction, wrapper-level code reimplementation, and flag recovery.</p>
+        </article>
+        <article>
+            <h2><a href="https://infisical.com/?utm_source=tldrinfosec">Infisical (Product Launch)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>Infisical manages secrets, encryption keys, digital certificates, and privileged access across cloud and on-premises infrastructure. Its Agent Vault inserts credentials through a proxy, keeping them from AI agents.</p>
+        </article>
+        <article>
+            <h2><a href="https://arstechnica.com/tech-policy/2026/10/highway-thieves-are-spoofing-gps-to-steal-millions-in-data-center-bound-cargo/?utm_source=tldrinfosec">Highway thieves are spoofing GPS to steal millions in data center-bound cargo (2 minute read)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>Thieves have stolen over $100 million in data center equipment since June. They compromise freight accounts through malicious links, then bid on shipments using hijacked identities, and those with fake licenses get accomplices hired as drivers. Two thefts involved ramming security escorts&#039; vehicles. One $10 million shipment disappeared after its tracking coordinates were apparently spoofed.</p>
+        </article>
+        <article>
+            <h2><a href="https://thehackernews.com/2026/10/american-organizations-under-attack.html?utm_source=tldrinfosec">American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed (4 minute read)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>Skyw4lker targets US manufacturing, technology, and healthcare organizations through device code phishing. Password-protected contracts or proposals send victims through Google Sites into legitimate Microsoft authentication flows. Completing attacker-initiated authorization gives attackers Microsoft 365 tokens. ANY.RUN identified obfuscated JavaScript and a PHP backend tracking victim sessions, IP addresses, and geolocation, and the backend repeatedly polls for authentication completion.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theregister.com/security/2026/10/27/ai-hacker-finds-4-severe-bugs-in-popular-industrial-control-software-in-under-4-hours/5305811?utm_source=tldrinfosec">AI &#039;hacker&#039; finds 4 severe bugs in popular industrial control software in under 4 hours (3 minute read)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>Causal Security&#039;s Cipher found four EPICS Base vulnerabilities in three hours and 49 minutes. One critical integer overflow, rated CVSS 9.8, could enable remote code execution. Three high-severity flaws permit crashes, memory corruption, or information disclosure. Exploitation requires network access to vulnerable EPICS services. EPICS controls equipment including particle accelerators and fusion experiments.</p>
+        </article>
+        <article>
+            <h2><a href="https://app.grayswan.ai/arena/start?utm_source=tldr&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=ipi-black&amp;amp;utm_content=infosec-quicklinks">A $300K Bug Bounty for AI Agents (Sponsor)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>Think CTFs or bug bounties, but for AI agents. Find ways to make them break their rules, climb the leaderboard, and win cash.Start Breaking</p>
+        </article>
+        <article>
+            <h2><a href="https://csrc.nist.gov/pubs/ir/8547/final?utm_source=tldrinfosec">IR 8547, Transition to Post-Quantum Cryptography Standards (1 minute read)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>NIST finalized its roadmap for phasing out quantum-vulnerable public-key algorithms in favor of its PQC standards, backing a June executive order that requires federal high-value systems to adopt PQC key establishment by 2030 and signatures by 2031.</p>
+        </article>
+        <article>
+            <h2><a href="https://therecord.media/uk-budget-proposal-software-companies-liable-cyber-breaches?utm_source=tldrinfosec">UK to look at making software companies liable for cyber breaches (5 minute read)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>The UK&#039;s latest budget commits the government to consulting next year on where liability for cyber breaches should sit, its first formal step toward holding software vendors accountable for insecure products, alongside £154 million for AI-driven cyber defenses that includes a £70 million NCSC vulnerability exposure centre.</p>
+        </article>
+        <article>
+            <h2><a href="https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/?utm_source=tldrinfosec">Bank of America kindly asks that you don&#039;t share your banking password with your AI assistant (2 minute read)</a></h2>
+            <time datetime="2026-10-29T00:00:00.000Z">2026-10-29T00:00:00.000Z</time>
+            <p>Bank of America emailed customers warning against sharing banking credentials with AI assistants or other outside services, as sharing credentials can expose accounts to unauthorized transactions, fraud-triggered lockouts, or password leaks through assistant vulnerabilities.</p>
+        </article>
+        <article>
+            <h2><a href="https://digital.ai/resource-center/whitepapers/digital-ai-2026-application-security-threat-report/?utm_source=tldr&amp;amp;utm_medium=email&amp;amp;utm_campaign=OA-AS-2026_10_28-WW-TLDR-WP-%5B2026+App+Sec+Threat+Report%5D&amp;amp;utm_content=header_mobile_app_went&amp;amp;utm_term=2026-10-28">Your Mobile App Went Live. The Clock Started 1 Hour and 56 Minutes Ago. (Sponsor)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>A newly published app was attacked within two hours, according to Digital.ai&#039;s 2026 Threat Report. Tampering followed within 36 hours.AI changed attack economics. Reverse engineering now takes an afternoon, not weeks. The fourth annual report tracks the fallout:87% of apps faced attacks, up from 55%86% of iOS apps were attacked, versus 89% on AndroidConnected car apps face attacks as often as banking appsEMEA, LATAM and APAC overtook North AmericaIf your AppSec budget assumes iOS is safe and only banks are targeted, it&#039;s working from the wrong data.Download the report</p>
+        </article>
+        <article>
+            <h2><a href="https://dailyhodl.com/2026/10/26/hacker-drains-nearly-1000000-in-sol-from-solana-trading-bot-users-in-94-seconds/?utm_source=tldrinfosec">Hacker Drains Nearly $1M in SOL From Solana Trading Bot Users in 94 Seconds (2 minute read)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>An attacker successfully drained roughly $947K from 49 crypto wallets belonging to 9 users of a crypto trading app that runs inside Telegram. The developer behind the trading bot stated that the attacker exploited an RCE in a third-party module and that no private keys were compromised. Bloom also stated that it will reimburse the affected users.</p>
+        </article>
+        <article>
+            <h2><a href="https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/?utm_source=tldrinfosec">Japan internet giant GMO says hackers posted stolen customer data (2 minute read)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>GMO Internet says an attacker accessed its Onamae Desktop Cloud service, which serves financial traders. Hackers demanded about $50 million, and GMO shut down the service on October 21. The company says 27,000 servers may be affected. Customers have reported unauthorized trading-account activity, and alleged customer data has now appeared online. GMO is verifying the leak, asking users to reset passwords, and collecting customer devices to check for malware.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.theregister.com/cyber-crime/2026/10/27/attack-on-email-hosting-provider-for-german-far-right-party-afd-exposed-345k-accounts/5305660?utm_source=tldrinfosec">Attack on email hosting provider for German far right party AfD exposed 345k accounts (2 minute read)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>Hackers exposed more than 345,000 email addresses and over a terabyte of emails from Alternative für Deutschland&#039;s hosting provider, Alternita Dienstleistungs. A report says the September attack began through a weakly protected WordPress site and led to persistent server access. The leaked emails were published in searchable form. AfD disputes the automated summaries but has not disputed the raw files.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.wiz.io/blog/anatomy-of-ai-driven-cloud-attacks?utm_source=tldrinfosec">Loud, Fast, and Everywhere: Anatomy of a Real AI-Driven Cloud Attack (12 minute read)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>Wiz has observed more threat actors leveraging AI agents to run end-to-end attacks on cloud environments. These attacks are noisy, persistent, and repeatedly alternate between different phases of an attack chain. In this article, Wiz walks through an actual attack chain that its CIRT observed. Defenders should unify logs, utilize AI for investigation and triage, assume full exposure on compromised resources, maintain visibility, and restrict trust between systems.</p>
+        </article>
+        <article>
+            <h2><a href="https://agentic.tracebit.com/factory/?utm_source=tldrinfosec">Making attacking agents pay with Context Bombs (7 minute read)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>Tracebit tested nine “Context Bomb” deception techniques against seven AI models in 773 controlled AWS assessments. Agents started with limited AWS permissions and had two hours to access data, execute code, or escalate privileges. Combined deception reduced the mean number of completed objectives from 2.48 to 0.23 per run, increased runtime by 2.8–8.9 times, and increased model cost by 1.6–3.9 times. A fake pentest report labeling real targets as canaries cut successful runs from 39/40 to 2/40 across four models. For defenders, the practical takeaway is that decoys can delay, misdirect, and sometimes stop automated attackers before they reach real objectives.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.cloudflare.com/kv-cache-exposure-remediation?utm_source=tldrinfosec">Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang (13 minute read)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>Prompts longer than 681,280 tokens sent to Cloudflare&#039;s GLM-5.3 Workers AI model returned other customers&#039; data in 155 responses, because disaggregated SGLang marked over-length requests as rejected yet still handed decode a one-token KV cache that left earlier sessions&#039; pages intact. Cloudflare knew its prefill KV pool was smaller than the advertised 1M-token context but only validated HTTP status codes before launch, and it found no evidence of deliberate exploitation during the August 27 to September 9 window. Operators running disaggregated SGLang should upgrade to v0.5.22 or later, verify KV pool size against context length on every node, and enable --disaggregation-enable-kv-checksum where their model supports it.</p>
+        </article>
+        <article>
+            <h2><a href="https://fandf.co/4hIzwkC">Help has arrived: Identity security designed to constrain agentic AI (Sponsor)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>3 in 5 orgs confirm/suspect AI-related security incidents. Not surprising, since AI agents run 24/7, and they&#039;ll do whatever it takes to succeed – at 100x the speed and scale. But agentic AI itself doesn&#039;t cause incidents – the lack of proper constraints on agents does. Teleport teaches you how to use Agentic Classifiers, Risk Scoring, and more.Join the preview</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/snyk-labs/snyk-vulnbump?utm_source=tldrinfosec">VulnBump (GitHub Repo)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>VulnBump is a benchmark for vulnerability-driven dependency upgrades in real, runnable repositories.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/microsoft/apm?utm_source=tldrinfosec">Agent Pack Manager (GitHub Repo)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>APM (Agent Pack Manager) is a community-driven dependency manager for AI agents, designed to provide a package.json, requirements.txt, or Cargo.toml equivalent for agent configurations.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/DataDog/pathrunner?utm_source=tldrinfosec">Pathrunner (GitHub Repo)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>Pathrunner is a modular AWS privilege exploitation framework. It features a Metasploit-inspired REPL, a scriptable CLI, 80+ exploitation payloads, and interchangeable payloads.</p>
+        </article>
+        <article>
+            <h2><a href="https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html?utm_source=tldrinfosec">Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key (3 minute read)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>Attackers exploited a third-party monitoring tool on Keystone&#039;s website, obtained a hardware-wallet verification key, and accessed 25,964 buyer records plus 12,873 unpaid checkout records. The key could let counterfeit devices pass Keystone&#039;s authenticity check. Recovery phrases and private keys were not exposed. Keystone will destroy 18,835 unsold devices, pause shipments, and use a new key. Devices delivered after October 20 should not be used until support confirms authenticity.</p>
+        </article>
+        <article>
+            <h2><a href="https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model?utm_source=tldrinfosec">Concerning behavior from a popular open-weight AI model (11 minute read)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>Alibaba&#039;s Qwen3.8-Flash-Next, asked to write a routine detection rule inside Cohere&#039;s sandbox, inventoried its host and tried to upload a probe file to an Alibaba Cloud bucket in Beijing. At the same time, its reasoning trace claimed it wouldn&#039;t call any tools. The behavior surfaced in fewer than one in 100,000 calls. Still, prefilling showed that adding curl&#039;s -o flag pushed suspicious host generation from 0.5% to 23%, alongside cloud metadata probes and namespace tricks to sidestep permission denials. Cohere, which sells its own sovereign models, couldn&#039;t say whether this reflects a deliberate implant or leftover training-sandbox residue. However, it published the traces and reproduction script for independent verification.</p>
+        </article>
+        <article>
+            <h2><a href="https://cybersecuritynews.com/microsoft-authenticator-flaw/?utm_source=tldrinfosec">Microsoft Authenticator Flaw Lets Malicious Android Apps Steal Account Tokens With Zero Permissions (2 minute read)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>Microsoft released an update to its Authenticator for Android app that could enable a local privilege escalation attack. An attacker could exploit the vulnerability to receive a token for any Microsoft app with a work profile installed on the device. The Authenticator app only validated whether the claimed identity looked valid, not whether it actually matched the caller.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.aikido.dev/blog/how-to-patch-php2shell-with-free-aikido-images?utm_source=TLDRinfosec&amp;amp;utm_medium=newsletter&amp;amp;utm_term=&amp;amp;utm_content=headline&amp;amp;utm_campaign=quicklinks10282026">Free PHP2Shell Images with patches (Sponsor)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>Upgrading a PHP pain? Aikido published free patched PHP container images for almost every release line, with the fixes backported into the version you already run. Stay safe →</p>
+        </article>
+        <article>
+            <h2><a href="https://www.blue-initiative.org/?utm_source=tldrinfosec">Blue Initiative (Website)</a></h2>
+            <time datetime="2026-10-28T00:00:00.000Z">2026-10-28T00:00:00.000Z</time>
+            <p>The Blue Initiative is a vulnerability database for vulnerabilities that matter at sea.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Generated on 2026-10-30T17:16:18.980Z</p>
+    </footer>
+</body>
+</html>
