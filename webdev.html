@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TLDR WEBDEV news articles for AI consumption">
+    <title>TLDR WEBDEV News Feed</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1em;
+        }
+        article:last-child {
+            border-bottom: none;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        time {
+            color: #666;
+            font-size: 0.9em;
+        }
+        p {
+            color: #444;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TLDR WEBDEV News Feed</h1>
+        <p>Latest 50 articles from <a href="https://tldr.tech/">TLDR</a></p>
+    </header>
+    <main>
+        <article>
+            <h2><a href="https://workos.com/pipes?utm_source=tldrdev&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=q42026&amp;amp;utm_content=header_ship_integrations_without&amp;amp;utm_term=2026-11-05">Ship integrations without maintaining every OAuth flow (Sponsor)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>Your users want to connect GitHub. Oh, and Slack. Salesforce of course. And Stripe. And Gmail...Each integration adds OAuth flows, tokens to store, and refresh logic to maintain. And with coding agents spinning up new integrations in minutes, it gets messy, fast.WorkOS Pipes handles the connection flow, encrypted credential storage, and token refresh. Add the prebuilt widget so users can connect their accounts, then fetch an access token to call the provider&#039;s API.You build what your app does with the connection. Pipes handles the credentials behind it.Start building with Pipes →</p>
+        </article>
+        <article>
+            <h2><a href="https://openai.com/index/a-thousand-fewer-paths-to-root/?utm_source=tldrdev">A thousand fewer paths to root (20 minute read)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>OpenAI&#039;s autonomous security pipeline reproduced 1,724 Linux kernel vulnerabilities and generated exploits for 948 distinct local privilege escalation flaws at an API cost of $1.2 million. Agents handled discovery, runtime validation, exploit development, and candidate patches before human review and maintainer reporting. The research highlights why validation must check how an exploit succeeds, after some agents gained root through a different vulnerability than the one assigned.</p>
+        </article>
+        <article>
+            <h2><a href="https://clarity.microsoft.com/blog/how-we-made-clarity-js-smaller/?utm_source=tldrdev">How We Made clarity.js 4.5% Smaller Without Sacrificing Compatibility (5 minute read)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>Microsoft reduced clarity.js by 1,257 gzip bytes through more than 50 automated change, build, measure, and test experiments. Named imports and minifier settings delivered savings, while extracting small helpers sometimes increased compressed size. A larger saving from modern JavaScript output could not ship because native async functions would break Angular sites that depend on Zone.js.</p>
+        </article>
+        <article>
+            <h2><a href="https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/?utm_source=tldrdev">You&#039;ll need nerves of steel to work with AI agents (10 minute read)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>Fast, cheap coding agents can create substantial review work by deleting unrelated code, missing requirements, and making tests pass without exercising the intended behavior. More than 100 hours with Cursor&#039;s Composer 2.5 exposed failures ranging from unsolicited edits to disabled schema validation and tests that bypassed API routes. Explicit rules and reference implementations did not reliably prevent repeated mistakes.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.kai-waehner.de/blog/2026/11/03/agentic-technical-debt-and-where-orchestration-belongs-in-ai-agent-architecture/?utm_source=tldrdev">Agentic Technical Debt and Where Orchestration Belongs in AI Agent Architecture (9 minute read)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>Agent systems accumulate debt when prompts and agent loops take responsibility for approvals, side-effect retries, and audit trails. A supplier invoice dispute illustrates how to divide ownership among the model, harness, durable execution, and an orchestration control plane. A single agent inside one application may need only its harness, while processes crossing systems need explicit ownership of recovery and approval.</p>
+        </article>
+        <article>
+            <h2><a href="https://gonzoml.substack.com/p/nobody-here-writes-code-by-hand-any?utm_source=tldrdev">Nobody here writes code by hand anymore (12 minute read)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>An account of adopting coding agents at Intento traces the shift from small experiments to a team that delegates code generation and reviews the output. The key change was making documentation, architectural decisions, tasks, and production logs accessible to models. Earlier failures on an established codebase were attributed to missing context that lived in people&#039;s heads, rather than the age of the code itself.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.tigerdata.com/go/trial?utm_source=content-syndication&amp;amp;utm_medium=referral&amp;amp;utm_campaign=tldr-dev-secondary">Scale Postgres Past the Slowdown – and Get $1,000 in Credits (Sponsor)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>Growing Postgres databases eventually hit a wall: queries slow, dashboards lag, and adding another database starts to feel inevitable. Tiger Data keeps Postgres fast as your data grows with time-series primitives, columnar storage, and automatic partitioning. No pipelines or second system needed. Get $1,000 in credits when you sign up for free.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/Graphify-Labs/graphify?utm_source=tldrdev">Graphify (GitHub Repo)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>Graphify turns code and supporting material into a queryable knowledge graph with paths between concepts and an interactive browser view. Code parsing uses local tree-sitter analysis without an LLM or vector store, while document and media interpretation can use a model. Edges distinguish explicit source relationships from inferred connections, making the graph&#039;s evidence easier to inspect.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/zeke/faster-chrome-devtools-skill?utm_source=tldrdev">faster-chrome-devtools-skill (GitHub Repo)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>This agent skill and dependency-free Node CLI control Chrome directly through the Chrome DevTools Protocol. It supports accessibility snapshots, tab management, screenshots, and raw protocol calls without requiring a separate browser MCP server. Screenshots are written to files so agents can choose when to load them into context.</p>
+        </article>
+        <article>
+            <h2><a href="https://go.dev/blog/jsonv2?utm_source=tldrdev">A new Go API for JSON (9 minute read)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>Go 1.27 makes encoding/json/v2 and encoding/json/jsontext generally available, addressing behavior and performance constraints that could not be fixed within the old API. The new defaults reject invalid UTF-8 and duplicate object names, while the packages separate Go value conversion from lower-level JSON syntax processing.</p>
+        </article>
+        <article>
+            <h2><a href="https://squid-protocol.github.io/gitgalaxy/museum-of-code/doom-dna/?utm_source=tldrdev">DOOM&#039;s DNA (Website)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>This interactive study compares the original DOOM source with 43 descendants to explore what survives copying, porting, and translation. Structural fingerprints and call relationships can reveal ancestry even when names or source text change. In a blind test, a Go translation&#039;s functions were assigned to the correct game subsystem 60% of the time, compared with 20% for shuffled labels.</p>
+        </article>
+        <article>
+            <h2><a href="https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability?utm_source=tldrdev">The PHP2Shell Vulnerability Heralds Cybersecurity Hell (4 minute read)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>AI-assisted researchers turned a PHP crash bug reported in 2024 into a critical vulnerability capable of running arbitrary code on a server. Finding the exploit took two weeks, while four engineers spent two months developing a patch, illustrating the growing gap between discovering flaws and safely fixing them. Better funding for open-source maintainers, defensive AI tools, and formal verification could help close that gap.</p>
+        </article>
+        <article>
+            <h2><a href="https://openai.com/index/introducing-images-2-6/?utm_source=tldrdev">Introducing Images 2.6 (3 minute read)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>OpenAI&#039;s Images 2.6 brings 50% faster image generation, GIF creation, and better consistency across edits.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.ricursive.com/ripple?utm_source=tldrdev">Introducing Ripple-65B Preview (6 minute read)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>Ricursive released Ripple-65B Preview, a dense open-weight model with up to 1M tokens of context that reports an 80.52 score on TerminalBench 2.1 and a total development and training cost of $32 million.</p>
+        </article>
+        <article>
+            <h2><a href="https://v3.parceljs.org/blog/v3-alpha?utm_source=tldrdev">Announcing Parcel 3 alpha (11 minute read)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>Parcel 3 rewrites the bundler in Rust and reports cold builds up to 100 times faster than v2.</p>
+        </article>
+        <article>
+            <h2><a href="https://claude.com/resources/articles/message-threads?utm_source=tldrdev">Make long-running agents faster with message threads (3 minute read)</a></h2>
+            <time datetime="2026-11-05T00:00:00.000Z">2026-11-05T00:00:00.000Z</time>
+            <p>Anthropic&#039;s public-beta message threads let active agents send only new messages each turn, reducing median time to first token by about 35% for requests with 500k to 1M tokens while leaving token usage unchanged.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.atlassian.com/webinars/software/state-of-devex-2026?utm_source=tldr&amp;amp;utm_medium=paid-newsletter&amp;amp;utm_campaign=P%3Atwc*O%3Agdc*F%3Aawareness*C%3Awebinar*H%3Afy27q2*I%3Adev-primary-nov4*E%3Acloud*&amp;amp;utm_content=header_atlassian_webinar_state&amp;amp;utm_term=2026-11-04&amp;amp;utm_sfdc-campaign_id=701QB000016wG6uYAE">Atlassian Webinar: The State of Developer Experience in 2026 (Sponsor)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>Engineering orgs have adopted AI en-masse, but only 20% of developers say their organization is using it strategically. In Atlassian&#039;s upcoming webinar, an expert panel helmed by Andrew Boyagi (Customer CTO, Atlassian) and featuring Kelsey Hightower (Author, Investor, and Open Source Contributor), they will unpack this and other findings from the 2026 State of DevEx Report to reveal a path from AI adoption to operationalization. You&#039;ll learn:Why productivity gains are absorbed by organizational friction when there&#039;s no clear AI strategy.How engineering is shifting toward judgment, code review, and quality validation over raw code generation.Why measuring AI usage alone is dangerous – and what to focus on instead.Save your virtual seat + get the full recording.</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.nns.ee/2026/11/02/renault-hack/?utm_source=tldrdev">Jailbreaking my car&#039;s navigation system just so I can change the time (10 minute read)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>A Renault&#039;s clock settings were inaccessible without a legitimate navigation SD card, turning a daylight-saving adjustment into a firmware reverse-engineering project. QEMU emulation exposed how a script parser&#039;s file writes and Linux&#039;s core-dump handling could combine into code execution. The eventual fix changed the stored GPS time offset from 180 minutes to 120.</p>
+        </article>
+        <article>
+            <h2><a href="https://planetscale.com/blog/the-hidden-latency-inside-your-database?utm_source=tldrdev">The hidden latency inside your database (7 minute read)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>Network-attached storage adds latency inside a database cluster, even when the application and database are close together. Local NVMe avoids that hop, but requires deliberate replication and failover to preserve durability. Workloads that fit mostly in RAM may see little benefit, while frequent cache misses and IOPS limits make storage placement worth examining.</p>
+        </article>
+        <article>
+            <h2><a href="https://openai.com/index/scaling-git-at-openai/?utm_source=tldrdev">Scaling Git at OpenAI (22 minute read)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>OpenAI built Pando, a Git-compatible backend that handles pushes to unrelated branches independently and reuses cached packfiles across fetches. It reduced median push latency by nearly 80% and now serves nearly a petabyte of Git data per day. The tradeoff is weaker consistency across branches and some redundant downloads, allowing writes to scale horizontally and reads to saturate clients&#039; network connections.</p>
+        </article>
+        <article>
+            <h2><a href="https://knlb.dev/essays/surrender?utm_source=tldrdev">Resisting Cognitive Surrender (12 minute read)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>Uncritically accepting agent output can increase technical debt while eroding the understanding needed to debug and maintain a system. Choose how much to delegate based on risk, stay involved in consequential decisions, and ask for small, comprehensible changes. When delegating more fully, use independent observability, deterministic checks, and shadow traffic to verify behavior rather than relying solely on the agent&#039;s account.</p>
+        </article>
+        <article>
+            <h2><a href="https://tech.wmg.com/auditioning-engineering-4ca3d48bf457?utm_source=tldrdev">Auditioning Engineering: Software Engineering Interviews in the Age of AI (6 minute read)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>Warner Music Group encourages candidates to use AI while solving realistic API integration problems against a live, randomized test server. Its system-design interview asks candidates to modify an existing system and infer causes from observed behavior. The approach emphasizes technical judgment, although building new coding exercises and training senior system-design interviewers remain costly.</p>
+        </article>
+        <article>
+            <h2><a href="https://honnibal.dev/blog/astra-read-write-misleading?utm_source=tldrdev">The weight-space programming post is misleading (5 minute read)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>This critique separates experiments that inspect small networks&#039; raw weights from larger-model experiments that use Python and execution feedback. The Qwen result involved 50 batches of practice problems, so it does not demonstrate improvement from inspecting raw weights alone. The distinction matters when judging whether the work shows one general capability or several different engineering techniques.</p>
+        </article>
+        <article>
+            <h2><a href="https://workos.com/blog/mcp-vs-rest?utm_source=tldrdev&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=q42026">MCP and REST: How they fit together (Sponsor)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>Your REST API already works. Learn what MCP adds for AI agents, how tool discovery works, and where each belongs in your architecture. When you&#039;re ready to build, WorkOS handles authentication for your MCP server.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/earendil-works/djs?utm_source=tldrdev">djs (GitHub Repo)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>djs is a JavaScript and TypeScript engine written in Rust for agent-generated scripts running in a WebAssembly sandbox. It keeps the entire VM state in one byte array, allowing execution to pause between instructions, snapshot while waiting for tools, and resume elsewhere. The focused runtime deliberately omits features such as ES modules, Intl, and a JIT.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/p10node/office-engine?utm_source=tldrdev">Office Engine (GitHub Repo)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>Office Engine embeds DOCX, XLSX, and PPTX viewing and editing in a browser through React or a web component. Progressive loading, Web Worker parsing, and virtualized views handle large files, while saves regenerate edited parts and preserve the original bytes elsewhere.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/google/three-live?utm_source=tldrdev">Three-Live (GitHub Repo)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>Three-Live compiles a declarative subset of Three.js into GLB and USDZ assets for web, Android, and Apple rendering pipelines. It runs generated scripts with execution timeouts and geometry quotas, then hands the assets to platform-specific viewers. The Apache-licensed project is in Developer Preview and is not an officially supported Google product.</p>
+        </article>
+        <article>
+            <h2><a href="https://rikiyat.github.io/blog/weight-space-programming/?utm_source=tldrdev">Sparks of Weight-Space Programming (20 minute read)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>Experiments show GPT-6 Astra reading and directly editing neural network weights without gradient descent, including writing small game-playing networks from scratch. Editing 0.016% of Qwen3.5-0.8B&#039;s weights reduced reasoning loops and raised MATH-500 accuracy from 7.9% to 48.1% with 50 forward passes for feedback. The gains removed an obstacle to existing ability, while similar edits failed to meaningfully improve a Gemma model that rarely looped.</p>
+        </article>
+        <article>
+            <h2><a href="https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html?utm_source=tldrdev">Could a modern chess engine on a Pentium have defeated Kasparov in 1996? (15 minute read)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>A port of Stockfish running on a 200 MHz Pentium Pro with 64 MB of RAM reaches a measured rating of 3180 at 30 seconds per move. The experiment attributes much of chess engines&#039; progress to better search and evaluation rather than faster hardware. Its roughly 3300 rating at classical time controls is extrapolated from shorter games, and readers can play the machine online.</p>
+        </article>
+        <article>
+            <h2><a href="https://hackertv.org/?utm_source=tldrdev">HackerTV (Website)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>HackerTV turns videos recommended in Hacker News comments into shared, continuously scheduled TV channels with a retro interface.</p>
+        </article>
+        <article>
+            <h2><a href="https://namespace.so/blog/mac-at-any-scale?utm_source=tldrdev">Mac at any scale (14 minute read)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>Namespace explains the hardware, networking, virtualization, and VM-image distribution work behind running a fleet of Macs for cloud development and CI.</p>
+        </article>
+        <article>
+            <h2><a href="https://www.autodidacts.io/curiosity-traps/?utm_source=tldrdev">Curiosity Traps (7 minute read)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>Subtle details, footnotes, and Easter eggs in public work can reward close attention and help people with shared interests find each other.</p>
+        </article>
+        <article>
+            <h2><a href="https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/?utm_source=tldrdev">C++26 DIS failed, how does C++ survive? (7 minute read)</a></h2>
+            <time datetime="2026-11-04T00:00:00.000Z">2026-11-04T00:00:00.000Z</time>
+            <p>C++26&#039;s draft failed its ISO ballot amid objections to Contracts, leaving the committee to agree on a revised path and putting the release schedule in doubt.</p>
+        </article>
+        <article>
+            <h2><a href="https://getunblocked.com/events/how-to-stop-rewriting-your-agent-s-code-oct-28/?utm_source=tldrdev&amp;amp;utm_medium=email&amp;amp;utm_campaign=primary_20261023">A Pile of MCP Connectors Is Not A Context Engine (Sponsor)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>Your team connected Slack, Jira and GitHub over MCP, and engineers still spend their time steering agents to the right answer. This article looks at why: connectors fetch from one tool at a time, so every agent stitches the pieces together itself, trusts the first doc that looks right, and adds a search to your token bill each time. Read what changes when a context engine sits on top of your connectors: the same coding task finished 83% faster at 48% lower cost.Read the blog post</p>
+        </article>
+        <article>
+            <h2><a href="https://blog.cloudflare.com/dns-targeted-zone-builds/?utm_source=tldrdev">How we halved DNS build delay and cut memory use by 85% (18 minute read)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>Cloudflare replaced full DNS zone rebuilds with a planner that selects the smallest provably safe update and a scheduler that combines work for the same zone. The changes cut peak memory by 85% and halved the delay from a DNS change to its data being written to Quicksilver without rebuilding tens of millions of records for a settings change.</p>
+        </article>
+        <article>
+            <h2><a href="https://nextjs.org/blog/ship-less-javascript-with-ai?utm_source=tldrdev">Ship less JavaScript in Next.js with your AI agent (4 minute read)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>Hidden import chains often load heavy code upfront that teams thought they had deferred, which slows page loads. Next.js 16.4 adds an agent skill that reads Turbopack&#039;s module graph, finds these problems, and can apply the fixes, plus new Bundle Analyzer views for route sizes, snapshot diffs, and the critical render path. At Vercel, it removed nearly 2 MB of compressed JavaScript across v0 and vercel.com, so Turbopack users can get similar savings with little manual work.</p>
+        </article>
+        <article>
+            <h2><a href="https://maple.dev/blog/react-to-foldkit/?utm_source=tldrdev">Porting 287,000 lines of React in 3 days. The hard part was proving nothing changed. (11 minute read)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>Maple moved its observability app from React to Foldkit using about 40 Claude agents, with most human effort going into a harness that compared more than 2,600 screen variants across pixels, structure, network requests, and accessibility. The rewrite took three days, but code review still found about 180 defects the screenshots missed, and the startup bundle roughly doubled.</p>
+        </article>
+        <article>
+            <h2><a href="https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/?utm_source=tldrdev">Hunger beats tenure: Advice for junior engineers (5 minute read)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>Coding interviews no longer predict success when AI can outperform candidates on the same tasks, according to this hiring perspective. Newer engineers can stand out by tying their work to business goals, choosing one bold idea, and proving it with a weekend prototype.</p>
+        </article>
+        <article>
+            <h2><a href="https://karrisaarinen.com/posts/our-organizations-are-being-ddosed-from-the-inside/?utm_source=tldrdev">Our organizations are being DDoSed from the inside (4 minute read)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>AI makes it cheap to generate changes, but understanding, reviewing, and coordinating them still consumes the same limited human attention. Clearer intent about priorities and scope, plus a deliberate gate between experiments and the shared product, can help teams keep control of their direction.</p>
+        </article>
+        <article>
+            <h2><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-time-to-rethink-software?utm_source=tldrdev">Time to rethink software security because of AI? (10 minute read)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>A single week brought a pile-up of major security failures: a certificate authority issued keys that were trivially guessable numbers, critical flaws hit PHP, GitLab, and Node.js, Railway leaked customer secrets, and PingCAP&#039;s TiDB control plane was breached for a month. AI now makes vulnerabilities faster to find and easier to exploit, even for nontechnical attackers. Teams will likely need automated patching, constant security monitoring, and AI-driven defense, and security will cost more.</p>
+        </article>
+        <article>
+            <h2><a href="https://router.com/?utm_campaign=tldr-dev&amp;amp;utm_medium=newsletter">Router.com: Choose the model that gets the job done without bankrupting you (Sponsor)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>Each model call costs almost nothing... and then you get a $50K token bill. Router.com cuts your inference costs by matching every request to the most efficient model – balancing cost, speed, and quality of output. It&#039;s one endpoint with automatic fallbacks, request-level observability, and built-in privacy controls. Get your router.com API key</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/beenuar/AiSOC?utm_source=tldrdev">AiSOC (GitHub Repo)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>AiSOC is a self-hostable security operations platform that combines alerts, uses LLM agents for triage, and supports investigations mapped to MITRE ATT&amp;CK. A replayable decision ledger records agent steps, and an MCP server exposes the system to connected coding assistants.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio?utm_source=tldrdev">Disc Image Studio (GitHub Repo)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>Disc Image Studio turns images into data patterns that become visible artwork on the recording surface of CDs, DVDs, and single-layer Blu-ray discs. Windows supports design and burning, while experimental Linux and macOS command-line builds generate disc images offline.</p>
+        </article>
+        <article>
+            <h2><a href="https://labs.leaningtech.com/blog/cheerpj-5.0?utm_source=tldrdev">CheerpJ 5.0 (10 minute read)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>CheerpJ brings Java 21 and preview support for Java 25 to the browser, with a full OpenJDK that can compile as well as run Java applications. Its new WasmGC engine is experimental and opt-in, with production readiness planned for CheerpJ 6.0.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/kgoedecke/doop?utm_source=tldrdev">Doop (GitHub Repo)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>Doop is a multiplayer design canvas where people and AI agents edit together through a built-in MCP server. It supports live cursors, threaded comments, clickable prototypes, and self-hosting with embedded Postgres for local development.</p>
+        </article>
+        <article>
+            <h2><a href="https://p.migdal.pl/warsaw-vibe-voxel/?utm_source=tldrdev">Warsaw in voxels (Website)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>Explore central Warsaw as an interactive 3D voxel map built from GUGiK and OpenStreetMap data. Controls for date, time, and weather let you change the scene&#039;s lighting and atmosphere, and the source code is available to inspect.</p>
+        </article>
+        <article>
+            <h2><a href="https://allenai.org/blog/novelty-bench?utm_source=tldrdev">Can we trust LLMs to judge whether a research idea is novel? (8 minute read)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>Ai2&#039;s benchmark, built from ICLR 2026 peer reviews, tests whether LLMs can judge research novelty and finds that small prompt changes can swing accuracy by more than 50 points on AI-generated ideas. Extra retrieval and reasoning did not reliably help, so teams using LLM judges should test their stability on the kinds of ideas they plan to score.</p>
+        </article>
+        <article>
+            <h2><a href="https://aws.amazon.com/blogs/architecture/automating-agentic-ai-well-architected-reviews-with-the-aws-agentic-ai-lens/?utm_source=tldrdev">Automating agentic AI Well-Architected reviews with the AWS Agentic AI Lens (8 minute read)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>Smarsh turned the AWS Agentic AI Lens into a Claude skill that checks all 150 best practices against a GitHub repository and produces an evidence-cited workbook in hours. The review surfaced gaps such as missing prompt-injection screening and cost controls, making follow-up architecture discussions more focused.</p>
+        </article>
+        <article>
+            <h2><a href="https://advertise.tldr.tech/?utm_source=tldrdev&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=quicklinks11032026&amp;amp;sp=ld1FAeFUY4ZzWUWLg6pkaod9">Reach 8 million tech professionals reading TLDR (Sponsor)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>Ads get ignored on social media but not in TLDR! Reach software developers and engineering leaders where they actually pay attention. Learn more about sponsorship opportunities.</p>
+        </article>
+        <article>
+            <h2><a href="https://github.com/vercel-labs/scriptc?utm_source=tldrdev">scriptc (GitHub Repo)</a></h2>
+            <time datetime="2026-11-03T00:00:00.000Z">2026-11-03T00:00:00.000Z</time>
+            <p>This experimental compiler turns TypeScript and JavaScript into native executables or WebAssembly.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Generated on 2026-11-05T19:05:48.030Z</p>
+    </footer>
+</body>
+</html>
